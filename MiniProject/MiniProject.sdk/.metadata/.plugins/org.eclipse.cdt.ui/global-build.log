@@ -4484,3 +4484,1127 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Ingenting at gøre for 'main-build'.
+13:33:13 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:143:4: error: too few arguments to function 'setInputMatrices'
+    setInputMatrices(aInst3);
+    ^~~~~~~~~~~~~~~~
+../src/lab4.c:64:6: note: declared here
+ void setInputMatrices(VectorArray3 A, int matrixSize)
+      ^~~~~~~~~~~~~~~~
+../src/lab4.c:120:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:120:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+make: *** [src/lab4.o] Fejl 1
+13:33:33 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:120:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:120:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24004	   1164	   8280	  33448	   82a8	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+13:40:22 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:119:1: error: expected expression before '}' token
+ }
+ ^
+../src/lab4.c:116:6: warning: unused variable 'y' [-Wunused-variable]
+  int y = convUniDirectionSoft(kernel2, A, matrixSize);
+      ^
+../src/lab4.c:115:6: warning: unused variable 'x' [-Wunused-variable]
+  int x = convUniDirectionSoft(kernel1, A, matrixSize);
+      ^
+../src/lab4.c:114:6: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+  int res;
+      ^~~
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:119:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/lab4.o] Fejl 1
+13:41:32 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:117:8: error: 'math' undeclared (first use in this function)
+  res = math.sqr(math.pow(x)+math.pow(y));
+        ^~~~
+../src/lab4.c:117:8: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab4.c:114:6: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+  int res;
+      ^~~
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:119:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/lab4.o] Fejl 1
+13:41:41 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:117:8: error: 'math' undeclared (first use in this function)
+  res = math.sqr(math.pow(x,2)+math.pow(y,2));
+        ^~~~
+../src/lab4.c:117:8: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab4.c:114:6: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+  int res;
+      ^~~
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:119:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/lab4.o] Fejl 1
+13:42:26 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:117:8: warning: implicit declaration of function 'sqr' [-Wimplicit-function-declaration]
+  res = sqr(pow(x,2)+pow(y,2));
+        ^~~
+../src/lab4.c:114:6: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+  int res;
+      ^~~
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:119:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/lab4.o: In function `convSoft':
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `pow'
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `pow'
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `sqr'
+./src/lab4.o: In function `main':
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:157: undefined reference to `convolutionSoft'
+collect2.exe: error: ld returned 1 exit status
+make: *** [lab4.elf] Fejl 1
+13:42:34 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:114:6: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+  int res;
+      ^~~
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:119:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/lab4.o: In function `convSoft':
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `pow'
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `pow'
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `sqrt'
+./src/lab4.o: In function `main':
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:157: undefined reference to `convolutionSoft'
+collect2.exe: error: ld returned 1 exit status
+make: *** [lab4.elf] Fejl 1
+13:43:28 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:117:17: error: expected expression before 'double'
+  res = sqrt(pow(double(x),2)+pow(double(y),2));
+                 ^~~~~~
+../src/lab4.c:117:13: error: too few arguments to function 'pow'
+  res = sqrt(pow(double(x),2)+pow(double(y),2));
+             ^~~
+In file included from ../src/lab4.c:3:0:
+c:\xilinx\sdk\2017.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\math.h:134:15: note: declared here
+ extern double pow _PARAMS((double, double));
+               ^~~
+../src/lab4.c:117:34: error: expected expression before 'double'
+  res = sqrt(pow(double(x),2)+pow(double(y),2));
+                                  ^~~~~~
+../src/lab4.c:117:30: error: too few arguments to function 'pow'
+  res = sqrt(pow(double(x),2)+pow(double(y),2));
+                              ^~~
+In file included from ../src/lab4.c:3:0:
+c:\xilinx\sdk\2017.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\math.h:134:15: note: declared here
+ extern double pow _PARAMS((double, double));
+               ^~~
+../src/lab4.c:116:6: warning: unused variable 'y' [-Wunused-variable]
+  int y = convUniDirectionSoft(kernel2, A, matrixSize);
+      ^
+../src/lab4.c:115:6: warning: unused variable 'x' [-Wunused-variable]
+  int x = convUniDirectionSoft(kernel1, A, matrixSize);
+      ^
+../src/lab4.c:114:6: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+  int res;
+      ^~~
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:119:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/lab4.o] Fejl 1
+13:43:41 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:114:6: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+  int res;
+      ^~~
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:119:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/lab4.o: In function `convSoft':
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `pow'
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `pow'
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `sqrt'
+./src/lab4.o: In function `main':
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:157: undefined reference to `convolutionSoft'
+collect2.exe: error: ld returned 1 exit status
+make: *** [lab4.elf] Fejl 1
+13:44:38 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:114:6: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+  int res;
+      ^~~
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:119:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/lab4.o: In function `convSoft':
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `pow'
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `pow'
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [lab4.elf] Fejl 1
+13:45:55 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:114:6: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+  int res;
+      ^~~
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:119:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/lab4.o: In function `convSoft':
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `pow'
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `pow'
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [lab4.elf] Fejl 1
+13:46:07 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:114:6: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+  int res;
+      ^~~
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:119:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/lab4.o: In function `convSoft':
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `pow'
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `pow'
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [lab4.elf] Fejl 1
+13:46:30 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:114:9: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+  double res;
+         ^~~
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+../src/lab4.c: In function 'convSoft':
+../src/lab4.c:119:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/lab4.o: In function `convSoft':
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `pow'
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `pow'
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [lab4.elf] Fejl 1
+13:46:39 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/lab4.o: In function `convSoft':
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `pow'
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `pow'
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:117: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [lab4.elf] Fejl 1
+13:52:33 **** Clean-only build of configuration Debug for project lab4 ****
+make clean 
+rm -rf  ./src/lab4.o  ./src/lab4.d  lab4.elf.size  lab4.elf
+' '
+13:52:34 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28896	   1164	   8280	  38340	   95c4	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+13:55:13 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29008	   1164	   8280	  38452	   9634	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+13:56:28 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+13:57:20 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29008	   1164	   8280	  38452	   9634	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+13:57:43 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+13:58:51 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29008	   1164	   8280	  38452	   9634	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+13:59:05 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+13:59:43 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29120	   1164	   8280	  38564	   96a4	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+13:59:57 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+14:01:50 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:131:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:131:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29120	   1164	   8280	  38564	   96a4	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+14:02:04 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+14:10:16 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:182:4: warning: implicit declaration of function 'setTestMatrix' [-Wimplicit-function-declaration]
+    setTestMatrix(testMatrix, MSIZE5);
+    ^~~~~~~~~~~~~
+../src/lab4.c:183:4: warning: implicit declaration of function 'displayMatrix5' [-Wimplicit-function-declaration]
+    displayMatrix5(testMatrix5, MSIZE5);
+    ^~~~~~~~~~~~~~
+../src/lab4.c:183:19: error: 'testMatrix5' undeclared (first use in this function)
+    displayMatrix5(testMatrix5, MSIZE5);
+                   ^~~~~~~~~~~
+../src/lab4.c:183:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab4.c:146:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:146:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+make: *** [src/lab4.o] Fejl 1
+14:10:33 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:198:4: warning: implicit declaration of function 'setTestMatrix' [-Wimplicit-function-declaration]
+    setTestMatrix(testMatrix, MSIZE5);
+    ^~~~~~~~~~~~~
+../src/lab4.c:199:19: error: 'testMatrix5' undeclared (first use in this function)
+    displayMatrix5(testMatrix5, MSIZE5);
+                   ^~~~~~~~~~~
+../src/lab4.c:199:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab4.c:162:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:162:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+make: *** [src/lab4.o] Fejl 1
+14:10:46 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:199:4: warning: implicit declaration of function 'setTestMatrix' [-Wimplicit-function-declaration]
+    setTestMatrix(testMatrix, MSIZE5);
+    ^~~~~~~~~~~~~
+../src/lab4.c:200:19: error: 'testMatrix5' undeclared (first use in this function)
+    displayMatrix5(testMatrix5, MSIZE5);
+                   ^~~~~~~~~~~
+../src/lab4.c:200:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab4.c:163:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:163:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+make: *** [src/lab4.o] Fejl 1
+14:11:07 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:199:4: warning: implicit declaration of function 'setTestMatrix' [-Wimplicit-function-declaration]
+    setTestMatrix(testMatrix, MSIZE5);
+    ^~~~~~~~~~~~~
+../src/lab4.c:163:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:163:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/lab4.o: In function `main':
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:199: undefined reference to `setTestMatrix'
+collect2.exe: error: ld returned 1 exit status
+make: *** [lab4.elf] Fejl 1
+14:11:38 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:200:4: warning: implicit declaration of function 'setTestMatrix' [-Wimplicit-function-declaration]
+    setTestMatrix(testMatrix, MSIZE5);
+    ^~~~~~~~~~~~~
+../src/lab4.c:164:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:164:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/lab4.o: In function `main':
+C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\lab4\Debug/../src/lab4.c:200: undefined reference to `setTestMatrix'
+collect2.exe: error: ld returned 1 exit status
+make: *** [lab4.elf] Fejl 1
+14:11:43 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:164:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:164:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29504	   1164	   8328	  38996	   9854	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+14:11:58 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+14:36:55 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:183:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:183:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29568	   1164	   8360	  39092	   98b4	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+14:44:29 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:216:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:216:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30016	   1164	   8424	  39604	   9ab4	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+14:44:46 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:216:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:216:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30016	   1164	   8424	  39604	   9ab4	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+14:45:04 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+15:05:56 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:243:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:243:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30336	   1164	   8424	  39924	   9bf4	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+15:07:06 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:243:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:243:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30336	   1164	   8424	  39924	   9bf4	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+15:07:21 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+15:10:39 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:244:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:244:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30432	   1164	   8424	  40020	   9c54	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+15:10:58 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+15:18:19 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:244:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:244:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30560	   1164	   8424	  40148	   9cd4	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+15:18:39 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+15:20:35 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:244:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:244:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30560	   1164	   8424	  40148	   9cd4	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+15:20:52 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+15:23:07 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:244:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:244:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30440	   1164	   8424	  40028	   9c5c	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+15:23:27 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+15:27:12 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:244:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:244:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30400	   1164	   8424	  39988	   9c34	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+15:27:16 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:244:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:244:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30400	   1164	   8424	  39988	   9c34	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+15:27:37 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
