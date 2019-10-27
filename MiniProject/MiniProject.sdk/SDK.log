@@ -3004,3 +3004,767 @@ con
 11:50:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
 11:50:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
 11:50:43 INFO  : FPGA configured successfully with bitstream "C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:51:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+11:51:02 INFO  : 'fpga -state' command is executed.
+11:51:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:51:02 INFO  : Jtag cable 'Digilent Zybo 210279A6A756A' is selected.
+11:51:02 INFO  : 'jtag frequency' command is executed.
+11:51:02 INFO  : Sourcing of 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:51:02 INFO  : Context for 'APU' is selected.
+11:51:03 INFO  : Hardware design information is loaded from 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:51:03 INFO  : 'configparams force-mem-access 1' command is executed.
+11:51:03 INFO  : Context for 'APU' is selected.
+11:51:03 INFO  : 'stop' command is executed.
+11:51:03 INFO  : 'ps7_init' command is executed.
+11:51:03 INFO  : 'ps7_post_config' command is executed.
+11:51:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:51:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:51:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:51:03 INFO  : The application 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:51:03 INFO  : 'configparams force-mem-access 0' command is executed.
+11:51:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+loadhw -hw C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+dow C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:51:03 INFO  : Memory regions updated for context APU
+11:51:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:51:04 INFO  : 'con' command is executed.
+11:51:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+con
+----------------End of Script----------------
+
+11:51:04 INFO  : Launch script is exported to file 'C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab4.elf_on_local.tcl'
+11:52:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:52:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+11:52:17 INFO  : FPGA configured successfully with bitstream "C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:52:25 INFO  : Disconnected from the channel tcfchan#1.
+11:52:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+11:52:26 INFO  : 'fpga -state' command is executed.
+11:52:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:52:26 INFO  : Jtag cable 'Digilent Zybo 210279A6A756A' is selected.
+11:52:26 INFO  : 'jtag frequency' command is executed.
+11:52:26 INFO  : Sourcing of 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:52:26 INFO  : Context for 'APU' is selected.
+11:52:29 INFO  : Hardware design information is loaded from 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:52:29 INFO  : 'configparams force-mem-access 1' command is executed.
+11:52:29 INFO  : Context for 'APU' is selected.
+11:52:29 INFO  : 'stop' command is executed.
+11:52:30 INFO  : 'ps7_init' command is executed.
+11:52:30 INFO  : 'ps7_post_config' command is executed.
+11:52:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:52:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:52:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:52:30 INFO  : The application 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:52:30 INFO  : 'configparams force-mem-access 0' command is executed.
+11:52:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+loadhw -hw C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+dow C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:52:30 INFO  : Memory regions updated for context APU
+11:52:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:52:30 INFO  : 'con' command is executed.
+11:52:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+con
+----------------End of Script----------------
+
+11:52:30 INFO  : Launch script is exported to file 'C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab4.elf_on_local.tcl'
+11:53:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:53:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+11:53:11 INFO  : FPGA configured successfully with bitstream "C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:53:18 INFO  : Disconnected from the channel tcfchan#2.
+11:53:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+11:53:19 INFO  : 'fpga -state' command is executed.
+11:53:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:53:19 INFO  : Jtag cable 'Digilent Zybo 210279A6A756A' is selected.
+11:53:19 INFO  : 'jtag frequency' command is executed.
+11:53:19 INFO  : Sourcing of 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:53:19 INFO  : Context for 'APU' is selected.
+11:53:19 INFO  : Hardware design information is loaded from 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:53:19 INFO  : 'configparams force-mem-access 1' command is executed.
+11:53:19 INFO  : Context for 'APU' is selected.
+11:53:19 INFO  : 'stop' command is executed.
+11:53:20 INFO  : 'ps7_init' command is executed.
+11:53:20 INFO  : 'ps7_post_config' command is executed.
+11:53:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:53:20 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:53:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:53:20 INFO  : The application 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:53:20 INFO  : 'configparams force-mem-access 0' command is executed.
+11:53:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+loadhw -hw C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+dow C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:53:20 INFO  : Memory regions updated for context APU
+11:53:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:53:20 INFO  : 'con' command is executed.
+11:53:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+con
+----------------End of Script----------------
+
+11:53:20 INFO  : Launch script is exported to file 'C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab4.elf_on_local.tcl'
+11:54:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:54:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+11:54:21 INFO  : FPGA configured successfully with bitstream "C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:54:30 INFO  : Disconnected from the channel tcfchan#3.
+11:54:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+11:54:31 INFO  : 'fpga -state' command is executed.
+11:54:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:54:31 INFO  : Jtag cable 'Digilent Zybo 210279A6A756A' is selected.
+11:54:31 INFO  : 'jtag frequency' command is executed.
+11:54:32 INFO  : Sourcing of 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:54:32 INFO  : Context for 'APU' is selected.
+11:54:32 INFO  : Hardware design information is loaded from 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:54:32 INFO  : 'configparams force-mem-access 1' command is executed.
+11:54:32 INFO  : Context for 'APU' is selected.
+11:54:32 INFO  : 'stop' command is executed.
+11:54:32 INFO  : 'ps7_init' command is executed.
+11:54:32 INFO  : 'ps7_post_config' command is executed.
+11:54:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:54:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:54:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:54:32 INFO  : The application 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:54:32 INFO  : 'configparams force-mem-access 0' command is executed.
+11:54:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+loadhw -hw C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+dow C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:54:32 INFO  : Memory regions updated for context APU
+11:54:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:54:32 INFO  : 'con' command is executed.
+11:54:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+con
+----------------End of Script----------------
+
+11:54:32 INFO  : Launch script is exported to file 'C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab4.elf_on_local.tcl'
+11:55:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:55:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+11:55:29 INFO  : FPGA configured successfully with bitstream "C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:55:43 INFO  : Disconnected from the channel tcfchan#4.
+11:55:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+11:55:44 INFO  : 'fpga -state' command is executed.
+11:55:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:55:44 INFO  : Jtag cable 'Digilent Zybo 210279A6A756A' is selected.
+11:55:44 INFO  : 'jtag frequency' command is executed.
+11:55:45 INFO  : Sourcing of 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:55:45 INFO  : Context for 'APU' is selected.
+11:55:45 INFO  : Hardware design information is loaded from 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:55:45 INFO  : 'configparams force-mem-access 1' command is executed.
+11:55:45 INFO  : Context for 'APU' is selected.
+11:55:45 INFO  : 'stop' command is executed.
+11:55:45 INFO  : 'ps7_init' command is executed.
+11:55:45 INFO  : 'ps7_post_config' command is executed.
+11:55:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:55:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:55:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:55:45 INFO  : The application 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:55:45 INFO  : 'configparams force-mem-access 0' command is executed.
+11:55:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+loadhw -hw C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+dow C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:55:45 INFO  : Memory regions updated for context APU
+11:55:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:55:46 INFO  : 'con' command is executed.
+11:55:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+con
+----------------End of Script----------------
+
+11:55:46 INFO  : Launch script is exported to file 'C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab4.elf_on_local.tcl'
+12:04:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:04:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:04:33 INFO  : FPGA configured successfully with bitstream "C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+12:04:45 INFO  : Disconnected from the channel tcfchan#5.
+12:04:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:04:46 INFO  : 'fpga -state' command is executed.
+12:04:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:04:46 INFO  : Jtag cable 'Digilent Zybo 210279A6A756A' is selected.
+12:04:46 INFO  : 'jtag frequency' command is executed.
+12:04:46 INFO  : Sourcing of 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:04:46 INFO  : Context for 'APU' is selected.
+12:04:46 INFO  : Hardware design information is loaded from 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf'.
+12:04:46 INFO  : 'configparams force-mem-access 1' command is executed.
+12:04:46 INFO  : Context for 'APU' is selected.
+12:04:46 INFO  : 'stop' command is executed.
+12:04:47 INFO  : 'ps7_init' command is executed.
+12:04:47 INFO  : 'ps7_post_config' command is executed.
+12:04:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:04:47 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:04:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:04:47 INFO  : The application 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:04:47 INFO  : 'configparams force-mem-access 0' command is executed.
+12:04:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+loadhw -hw C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+dow C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:04:47 INFO  : Memory regions updated for context APU
+12:04:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:04:47 INFO  : 'con' command is executed.
+12:04:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+con
+----------------End of Script----------------
+
+12:04:47 INFO  : Launch script is exported to file 'C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab4.elf_on_local.tcl'
+12:15:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:15:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:15:07 INFO  : FPGA configured successfully with bitstream "C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+12:15:18 INFO  : Disconnected from the channel tcfchan#6.
+12:15:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:15:19 INFO  : 'fpga -state' command is executed.
+12:15:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:15:19 INFO  : Jtag cable 'Digilent Zybo 210279A6A756A' is selected.
+12:15:19 INFO  : 'jtag frequency' command is executed.
+12:15:19 INFO  : Sourcing of 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:15:19 INFO  : Context for 'APU' is selected.
+12:15:19 INFO  : Hardware design information is loaded from 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf'.
+12:15:19 INFO  : 'configparams force-mem-access 1' command is executed.
+12:15:19 INFO  : Context for 'APU' is selected.
+12:15:19 INFO  : 'stop' command is executed.
+12:15:20 INFO  : 'ps7_init' command is executed.
+12:15:20 INFO  : 'ps7_post_config' command is executed.
+12:15:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:15:20 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:15:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:15:20 INFO  : The application 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:15:20 INFO  : 'configparams force-mem-access 0' command is executed.
+12:15:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+loadhw -hw C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+dow C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:15:20 INFO  : Memory regions updated for context APU
+12:15:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:15:20 INFO  : 'con' command is executed.
+12:15:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+con
+----------------End of Script----------------
+
+12:15:20 INFO  : Launch script is exported to file 'C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab4.elf_on_local.tcl'
+12:16:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:16:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:16:09 INFO  : FPGA configured successfully with bitstream "C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+12:16:18 INFO  : Disconnected from the channel tcfchan#7.
+12:16:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:16:19 INFO  : 'fpga -state' command is executed.
+12:16:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:16:19 INFO  : Jtag cable 'Digilent Zybo 210279A6A756A' is selected.
+12:16:19 INFO  : 'jtag frequency' command is executed.
+12:16:19 INFO  : Sourcing of 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:16:19 INFO  : Context for 'APU' is selected.
+12:16:19 INFO  : Hardware design information is loaded from 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf'.
+12:16:19 INFO  : 'configparams force-mem-access 1' command is executed.
+12:16:19 INFO  : Context for 'APU' is selected.
+12:16:19 INFO  : 'stop' command is executed.
+12:16:20 INFO  : 'ps7_init' command is executed.
+12:16:20 INFO  : 'ps7_post_config' command is executed.
+12:16:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:16:20 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:16:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:16:20 INFO  : The application 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:16:20 INFO  : 'configparams force-mem-access 0' command is executed.
+12:16:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+loadhw -hw C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+dow C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:16:20 INFO  : Memory regions updated for context APU
+12:16:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:16:20 INFO  : 'con' command is executed.
+12:16:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+con
+----------------End of Script----------------
+
+12:16:20 INFO  : Launch script is exported to file 'C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab4.elf_on_local.tcl'
+12:16:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:16:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:16:49 INFO  : FPGA configured successfully with bitstream "C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+12:16:58 INFO  : Disconnected from the channel tcfchan#8.
+12:17:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:17:00 INFO  : 'fpga -state' command is executed.
+12:17:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:17:00 INFO  : Jtag cable 'Digilent Zybo 210279A6A756A' is selected.
+12:17:00 INFO  : 'jtag frequency' command is executed.
+12:17:00 INFO  : Sourcing of 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:17:00 INFO  : Context for 'APU' is selected.
+12:17:00 INFO  : Hardware design information is loaded from 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf'.
+12:17:00 INFO  : 'configparams force-mem-access 1' command is executed.
+12:17:00 INFO  : Context for 'APU' is selected.
+12:17:00 INFO  : 'stop' command is executed.
+12:17:00 INFO  : 'ps7_init' command is executed.
+12:17:00 INFO  : 'ps7_post_config' command is executed.
+12:17:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:17:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:17:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:17:01 INFO  : The application 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:17:01 INFO  : 'configparams force-mem-access 0' command is executed.
+12:17:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+loadhw -hw C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+dow C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:17:01 INFO  : Memory regions updated for context APU
+12:17:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:17:01 INFO  : 'con' command is executed.
+12:17:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+con
+----------------End of Script----------------
+
+12:17:01 INFO  : Launch script is exported to file 'C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab4.elf_on_local.tcl'
+12:18:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:18:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:18:17 INFO  : FPGA configured successfully with bitstream "C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+12:18:29 INFO  : Disconnected from the channel tcfchan#9.
+12:18:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:18:30 INFO  : 'fpga -state' command is executed.
+12:18:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:18:30 INFO  : Jtag cable 'Digilent Zybo 210279A6A756A' is selected.
+12:18:30 INFO  : 'jtag frequency' command is executed.
+12:18:30 INFO  : Sourcing of 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:18:30 INFO  : Context for 'APU' is selected.
+12:18:30 INFO  : Hardware design information is loaded from 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf'.
+12:18:30 INFO  : 'configparams force-mem-access 1' command is executed.
+12:18:30 INFO  : Context for 'APU' is selected.
+12:18:30 INFO  : 'stop' command is executed.
+12:18:31 INFO  : 'ps7_init' command is executed.
+12:18:31 INFO  : 'ps7_post_config' command is executed.
+12:18:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:18:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:18:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:18:31 INFO  : The application 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:18:31 INFO  : 'configparams force-mem-access 0' command is executed.
+12:18:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+loadhw -hw C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+dow C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:18:31 INFO  : Memory regions updated for context APU
+12:18:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:18:31 INFO  : 'con' command is executed.
+12:18:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+con
+----------------End of Script----------------
+
+12:18:31 INFO  : Launch script is exported to file 'C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab4.elf_on_local.tcl'
+12:21:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:21:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:21:04 INFO  : FPGA configured successfully with bitstream "C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+12:21:13 INFO  : Disconnected from the channel tcfchan#10.
+12:21:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:21:14 INFO  : 'fpga -state' command is executed.
+12:21:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:21:14 INFO  : Jtag cable 'Digilent Zybo 210279A6A756A' is selected.
+12:21:14 INFO  : 'jtag frequency' command is executed.
+12:21:14 INFO  : Sourcing of 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:21:15 INFO  : Context for 'APU' is selected.
+12:21:15 INFO  : Hardware design information is loaded from 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf'.
+12:21:15 INFO  : 'configparams force-mem-access 1' command is executed.
+12:21:15 INFO  : Context for 'APU' is selected.
+12:21:15 INFO  : 'stop' command is executed.
+12:21:15 INFO  : 'ps7_init' command is executed.
+12:21:15 INFO  : 'ps7_post_config' command is executed.
+12:21:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:21:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:21:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:21:15 INFO  : The application 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:21:15 INFO  : 'configparams force-mem-access 0' command is executed.
+12:21:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+loadhw -hw C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+dow C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:21:15 INFO  : Memory regions updated for context APU
+12:21:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:21:15 INFO  : 'con' command is executed.
+12:21:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+con
+----------------End of Script----------------
+
+12:21:15 INFO  : Launch script is exported to file 'C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab4.elf_on_local.tcl'
+12:24:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:24:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:24:15 INFO  : FPGA configured successfully with bitstream "C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+12:24:25 INFO  : Disconnected from the channel tcfchan#11.
+12:24:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:24:27 INFO  : 'fpga -state' command is executed.
+12:24:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:24:27 INFO  : Jtag cable 'Digilent Zybo 210279A6A756A' is selected.
+12:24:27 INFO  : 'jtag frequency' command is executed.
+12:24:27 INFO  : Sourcing of 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:24:27 INFO  : Context for 'APU' is selected.
+12:24:27 INFO  : Hardware design information is loaded from 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf'.
+12:24:27 INFO  : 'configparams force-mem-access 1' command is executed.
+12:24:27 INFO  : Context for 'APU' is selected.
+12:24:27 INFO  : 'stop' command is executed.
+12:24:27 INFO  : 'ps7_init' command is executed.
+12:24:27 INFO  : 'ps7_post_config' command is executed.
+12:24:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:24:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:24:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:24:28 INFO  : The application 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:24:28 INFO  : 'configparams force-mem-access 0' command is executed.
+12:24:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+loadhw -hw C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+dow C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:24:28 INFO  : Memory regions updated for context APU
+12:24:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:24:28 INFO  : 'con' command is executed.
+12:24:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+con
+----------------End of Script----------------
+
+12:24:28 INFO  : Launch script is exported to file 'C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab4.elf_on_local.tcl'
+12:26:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:26:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:26:20 INFO  : FPGA configured successfully with bitstream "C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+12:26:27 INFO  : Disconnected from the channel tcfchan#12.
+12:26:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:26:29 INFO  : 'fpga -state' command is executed.
+12:26:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:26:29 INFO  : Jtag cable 'Digilent Zybo 210279A6A756A' is selected.
+12:26:29 INFO  : 'jtag frequency' command is executed.
+12:26:29 INFO  : Sourcing of 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:26:29 INFO  : Context for 'APU' is selected.
+12:26:29 INFO  : Hardware design information is loaded from 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf'.
+12:26:29 INFO  : 'configparams force-mem-access 1' command is executed.
+12:26:29 INFO  : Context for 'APU' is selected.
+12:26:29 INFO  : 'stop' command is executed.
+12:26:30 INFO  : 'ps7_init' command is executed.
+12:26:30 INFO  : 'ps7_post_config' command is executed.
+12:26:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:26:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:26:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:26:30 INFO  : The application 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:26:30 INFO  : 'configparams force-mem-access 0' command is executed.
+12:26:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+loadhw -hw C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+dow C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:26:30 INFO  : Memory regions updated for context APU
+12:26:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:26:30 INFO  : 'con' command is executed.
+12:26:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+con
+----------------End of Script----------------
+
+12:26:30 INFO  : Launch script is exported to file 'C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab4.elf_on_local.tcl'
+12:34:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:34:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:34:46 INFO  : FPGA configured successfully with bitstream "C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+12:34:59 INFO  : Disconnected from the channel tcfchan#13.
+12:35:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+12:35:00 INFO  : 'fpga -state' command is executed.
+12:35:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:35:00 INFO  : Jtag cable 'Digilent Zybo 210279A6A756A' is selected.
+12:35:00 INFO  : 'jtag frequency' command is executed.
+12:35:00 INFO  : Sourcing of 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:35:00 INFO  : Context for 'APU' is selected.
+12:35:00 INFO  : Hardware design information is loaded from 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf'.
+12:35:00 INFO  : 'configparams force-mem-access 1' command is executed.
+12:35:00 INFO  : Context for 'APU' is selected.
+12:35:00 INFO  : 'stop' command is executed.
+12:35:01 INFO  : 'ps7_init' command is executed.
+12:35:01 INFO  : 'ps7_post_config' command is executed.
+12:35:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:35:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:35:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:35:01 INFO  : The application 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:35:01 INFO  : 'configparams force-mem-access 0' command is executed.
+12:35:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+loadhw -hw C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+dow C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:35:01 INFO  : Memory regions updated for context APU
+12:35:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:35:01 INFO  : 'con' command is executed.
+12:35:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+con
+----------------End of Script----------------
+
+12:35:01 INFO  : Launch script is exported to file 'C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab4.elf_on_local.tcl'
+13:11:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:11:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+13:11:02 INFO  : FPGA configured successfully with bitstream "C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+13:11:13 INFO  : Disconnected from the channel tcfchan#14.
+13:11:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+13:11:14 INFO  : 'fpga -state' command is executed.
+13:11:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:11:15 INFO  : Jtag cable 'Digilent Zybo 210279A6A756A' is selected.
+13:11:15 INFO  : 'jtag frequency' command is executed.
+13:11:15 INFO  : Sourcing of 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:11:15 INFO  : Context for 'APU' is selected.
+13:11:15 INFO  : Hardware design information is loaded from 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:11:15 INFO  : 'configparams force-mem-access 1' command is executed.
+13:11:15 INFO  : Context for 'APU' is selected.
+13:11:15 INFO  : 'stop' command is executed.
+13:11:15 INFO  : 'ps7_init' command is executed.
+13:11:15 INFO  : 'ps7_post_config' command is executed.
+13:11:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:11:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:11:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:11:15 INFO  : The application 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:11:15 INFO  : 'configparams force-mem-access 0' command is executed.
+13:11:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+loadhw -hw C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+dow C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:11:15 INFO  : Memory regions updated for context APU
+13:11:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:11:15 INFO  : 'con' command is executed.
+13:11:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+con
+----------------End of Script----------------
+
+13:11:15 INFO  : Launch script is exported to file 'C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab4.elf_on_local.tcl'
+13:13:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:13:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+13:13:35 INFO  : FPGA configured successfully with bitstream "C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+13:13:48 INFO  : Disconnected from the channel tcfchan#15.
+13:13:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A6A756A" && level==0} -index 1' command is executed.
+13:13:49 INFO  : 'fpga -state' command is executed.
+13:13:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:13:49 INFO  : Jtag cable 'Digilent Zybo 210279A6A756A' is selected.
+13:13:49 INFO  : 'jtag frequency' command is executed.
+13:13:49 INFO  : Sourcing of 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:13:49 INFO  : Context for 'APU' is selected.
+13:13:49 INFO  : Hardware design information is loaded from 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:13:49 INFO  : 'configparams force-mem-access 1' command is executed.
+13:13:49 INFO  : Context for 'APU' is selected.
+13:13:49 INFO  : 'stop' command is executed.
+13:13:50 INFO  : 'ps7_init' command is executed.
+13:13:50 INFO  : 'ps7_post_config' command is executed.
+13:13:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:13:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:13:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:13:50 INFO  : The application 'C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:13:50 INFO  : 'configparams force-mem-access 0' command is executed.
+13:13:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+loadhw -hw C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+dow C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/lab4/Debug/lab4.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:13:50 INFO  : Memory regions updated for context APU
+13:13:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:13:50 INFO  : 'con' command is executed.
+13:13:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A6A756A"} -index 0
+con
+----------------End of Script----------------
+
+13:13:50 INFO  : Launch script is exported to file 'C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_lab4.elf_on_local.tcl'

@@ -28,7 +28,7 @@ typedef vectorType5 VectorArray5[MSIZE5];
 
 
 void initKernels();
-void displayMatrix3(VectorArray3 input, int matrixSize);
+void displayMatrix3(VectorArray3 input);
 int convolutionSoft(VectorArray3 kernel, VectorArray3 A, int matrixSize);
 
 

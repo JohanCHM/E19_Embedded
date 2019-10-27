@@ -28,7 +28,7 @@ typedef vectorType5 VectorArray5[MSIZE5];
 
 
 void initKernels();
-void displayMatrix3(VectorArray3 input, int matrixSize);
+void displayMatrix3(VectorArray3 input);
 int convolutionSoft(VectorArray3 kernel, VectorArray3 A, int matrixSize);
 
 
@@ -75,17 +75,17 @@ void setInputMatrices3(VectorArray3 A)
 	}
 }
 
-void displayMatrix3(VectorArray3 input, int matrixSize)
+void displayMatrix3(VectorArray3 input, int matrix_size)
 {
 	xil_printf("Printing matrix: \r\n");
 	int i;
-	for(i = 0; i<matrixSize; i++)
+	for(i = 0; i<matrix_size; i++)
 	{
 		int j;
-		for(j = 0; j<matrixSize; j++)
+		for(j = 0; j<matrix_size; j++)
 		{
 			xil_printf("%3d ", input[i].comp[j]);
-			if(j == matrixSize-1)
+			if(j == matrix_size-1)
 				xil_printf("\r\n");
 		}
 	}
@@ -140,8 +140,8 @@ int main (void)
 
    initKernels();
    setInputMatrices3(aInst3);
-   displayMatrix3(sobel3x, MSIZE3);
-   displayMatrix3(aInst3, MSIZE3);
+   displayMatrix3(sobel3x);
+   displayMatrix3(aInst3);
    int result = 0;
    result = convolutionSoft(sobel3x, aInst3, MSIZE3);
    xil_printf("Convolution result is: %d \r\n", result);
