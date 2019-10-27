@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/tenna/Documents/Computerteknologi/E19/EmbeddedRealTimeSystems/Assignment_2/EmbeddedSystem_labs/lab4/lab4.runs/synth_1'
+HD_PWD='C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

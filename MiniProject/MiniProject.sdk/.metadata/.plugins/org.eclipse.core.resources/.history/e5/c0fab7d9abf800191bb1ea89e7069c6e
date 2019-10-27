@@ -1,0 +1,230 @@
+#include "xparameters.h"
+#include "xscutimer.h"
+
+//Timer defs
+#define TIMER_DEVICE_ID		XPAR_XSCUTIMER_0_DEVICE_ID
+#define ONE_SECOND 			325000000
+
+//Matrix size
+#define MSIZE 4
+#define MSIZE3 3
+#define MSIZE5 5
+
+//Matrix 4x4
+typedef union {
+	unsigned char comp[MSIZE];
+	unsigned int vect;
+} vectorType;
+
+typedef vectorType VectorArray[MSIZE];
+
+//Matrix 3x3
+typedef union {
+	signed char comp[MSIZE3];
+	signed int vect;
+} vectorType3;
+
+typedef vectorType3 VectorArray3[MSIZE3];
+
+//Matrix 5x5
+typedef union {
+	unsigned char comp[MSIZE5];
+	unsigned int vect;
+} vectorType5;
+
+typedef vectorType5 VectorArray5[MSIZE5];
+
+
+void setInputMatrices(VectorArray A, VectorArray B);
+void displayMatrix(VectorArray input);
+void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P);
+void multiMatrixHard(VectorArray A, VectorArray B, VectorArray P);
+void initKernels();
+
+
+//Global variables
+VectorArray pInst, aInst, bInst;
+
+VectorArray3 aInst3, sobel3x, sobel3y;
+
+
+
+void setInputMatrices(VectorArray A, VectorArray B)
+{
+	int aVal = 1;
+	int i;
+	for(i = 0; i<MSIZE; i++)
+	{
+		int j;
+		for(j = 0; j<MSIZE; j++)
+		{
+			A[i].comp[j] = aVal;
+			aVal++;
+
+			B[i].comp[j] = i+1;
+		}
+	}
+}
+
+void initKernels()
+{
+	sobel3x[0].comp[0] = 1;
+	sobel3x[0].comp[1] = 0;
+	sobel3x[0].comp[2] = -1;
+	sobel3x[1].comp[0] = 2;
+	sobel3x[1].comp[1] = 0;
+	sobel3x[1].comp[2] = -2;
+	sobel3x[2].comp[0] = 1;
+	sobel3x[2].comp[1] = 0;
+	sobel3x[2].comp[2] = -1;
+
+	sobel3y[0].comp[0] = -1;
+	sobel3y[0].comp[1] = -2;
+	sobel3y[0].comp[2] = -1;
+	sobel3y[1].comp[0] = 0;
+	sobel3y[1].comp[1] = 0;
+	sobel3y[1].comp[2] = 0;
+	sobel3y[2].comp[0] = 1;
+	sobel3y[2].comp[1] = 2;
+	sobel3y[2].comp[2] = 1;
+}
+
+
+void setInputMatrices3(VectorArray3 A)
+{
+	int aVal = 1;
+	int i;
+	for(i = 0; i<MSIZE3; i++)
+	{
+		int j;
+		for(j = 0; j<MSIZE3; j++)
+		{
+			A[i].comp[j] = aVal;
+			aVal++;
+		}
+	}
+}
+
+void displayMatrix(VectorArray input)
+{
+	xil_printf("Printing matrix: \r\n");
+	int i;
+	for(i = 0; i<MSIZE; i++)
+	{
+		int j;
+		for(j = 0; j<MSIZE; j++)
+		{
+			xil_printf("%3d ", input[i].comp[j]);
+			if(j == MSIZE-1)
+				xil_printf("\r\n");
+		}
+	}
+}
+
+void displayMatrix3(VectorArray3 input)
+{
+	xil_printf("Printing matrix: \r\n");
+	int i;
+	for(i = 0; i<MSIZE3; i++)
+	{
+		int j;
+		for(j = 0; j<MSIZE3; j++)
+		{
+			xil_printf("%3d ", input[i].comp[j]);
+			if(j == MSIZE3-1)
+				xil_printf("\r\n");
+		}
+	}
+}
+
+void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P)
+{
+	int i;
+		for(i = 0; i<MSIZE; i++)
+		{
+			int j;
+			for(j = 0; j<MSIZE; j++)
+			{
+				int temp = 0;
+
+				int k;
+				for(k=0; k<MSIZE; k++)
+				{
+
+					temp += A[i].comp[k]*B[j].comp[k];
+				}
+
+				P[i].comp[j] = temp;
+			}
+		}
+}
+
+int convolutionSoft(VectorArray3 kernel, VectorArray3 A)
+{
+	int acc = 0;
+	int i;
+	for(i=0; i<MSIZE3; i++)
+	{
+		int j;
+		for(j=0; j<MSIZE3; i++)
+		{
+			xil_printf("i is: %d and j is: %d \r\n", i, j);
+			xil_printf("acc is: %d \r\n", acc);
+			acc = kernel[MSIZE3-i].comp[MSIZE3-j]*A[i].comp[j];
+		}
+	}
+	return acc;
+}
+
+//====================================================
+
+int main (void) 
+{
+   xil_printf("-- Start of the Program --\r\n");
+
+
+
+
+   XScuTimer Timer;
+   XScuTimer *TimerInstancePtr = &Timer;
+   XScuTimer_Config *ConfigPtr;
+   int Status;
+   int cntValueStart, cntValueEnd;
+
+   //Initialize timer
+   ConfigPtr = XScuTimer_LookupConfig(TIMER_DEVICE_ID);
+
+   Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+		   ConfigPtr->BaseAddr);
+   if (Status != XST_SUCCESS) {
+	   return XST_FAILURE;
+   }
+
+
+
+   setInputMatrices(aInst, bInst);
+   initKernels();
+   setInputMatrices3(aInst3);
+   displayMatrix3(sobel3x);
+   displayMatrix3(aInst3);
+   int result = 0;
+   result = convolutionSoft(sobel3x, aInst3);
+   xil_printf("Convolution result is: %d \r\n", result);
+
+   displayMatrix(aInst);
+   displayMatrix(bInst);
+   displayMatrix(pInst);
+
+   xil_printf("Computing software matrix multiplication...\r\n\n");
+   XScuTimer_LoadTimer(TimerInstancePtr, ONE_SECOND*4);
+   XScuTimer_Start(TimerInstancePtr);
+   cntValueStart = XScuTimer_GetCounterValue(TimerInstancePtr);
+   multiMatrixSoft(aInst, bInst, pInst);
+   cntValueEnd = XScuTimer_GetCounterValue(TimerInstancePtr);
+
+   //Print the time elapsed in clock ticks
+   xil_printf("Time elapsed (in clock ticks): %d \r\n\n", cntValueStart-cntValueEnd);
+
+   xil_printf("Resulting matrix: \r\n");
+   displayMatrix(pInst);
+}

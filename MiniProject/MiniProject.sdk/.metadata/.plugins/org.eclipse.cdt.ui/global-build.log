@@ -3553,3 +3553,721 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Ingenting at gøre for 'main-build'.
+11:46:59 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c:27:21: error: conflicting types for 'VectorArray'
+ typedef vectorType3 VectorArray[MSIZE3];
+                     ^~~~~~~~~~~
+../src/lab4.c:19:20: note: previous declaration of 'VectorArray' was here
+ typedef vectorType VectorArray[MSIZE];
+                    ^~~~~~~~~~~
+../src/lab4.c:33:3: error: conflicting types for 'vectorType3'
+ } vectorType3;
+   ^~~~~~~~~~~
+../src/lab4.c:25:3: note: previous declaration of 'vectorType3' was here
+ } vectorType3;
+   ^~~~~~~~~~~
+../src/lab4.c:35:9: error: unknown type name 'vectorType5'
+ typedef vectorType5 VectorArray[MSIZE5];
+         ^~~~~~~~~~~
+../src/lab4.c:35:21: error: conflicting types for 'VectorArray'
+ typedef vectorType5 VectorArray[MSIZE5];
+                     ^~~~~~~~~~~
+../src/lab4.c:27:21: note: previous declaration of 'VectorArray' was here
+ typedef vectorType3 VectorArray[MSIZE3];
+                     ^~~~~~~~~~~
+../src/lab4.c:48:1: error: unknown type name 'VectorArray3'
+ VectorArray3 sobel3x, sobel3y;
+ ^~~~~~~~~~~~
+../src/lab4.c: In function 'setInputMatrices':
+../src/lab4.c:61:8: error: request for member 'comp' in something not a structure or union
+    A[i].comp[j] = aVal;
+        ^
+../src/lab4.c:64:8: error: request for member 'comp' in something not a structure or union
+    B[i].comp[j] = i+1;
+        ^
+../src/lab4.c:69:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[0].comp[0] = 1;
+         ^
+../src/lab4.c:70:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[0].comp[1] = 0;
+         ^
+../src/lab4.c:71:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[0].comp[2] = -1;
+         ^
+../src/lab4.c:72:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[1].comp[0] = 2;
+         ^
+../src/lab4.c:73:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[1].comp[1] = 0;
+         ^
+../src/lab4.c:74:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[1].comp[2] = -2;
+         ^
+../src/lab4.c:75:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[2].comp[0] = 1;
+         ^
+../src/lab4.c:76:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[2].comp[1] = 0;
+         ^
+../src/lab4.c:77:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[2].comp[2] = -1;
+         ^
+../src/lab4.c:79:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[0].comp[0] = -1;
+         ^
+../src/lab4.c:80:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[0].comp[1] = -2;
+         ^
+../src/lab4.c:81:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[0].comp[2] = -1;
+         ^
+../src/lab4.c:82:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[1].comp[0] = 0;
+         ^
+../src/lab4.c:83:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[1].comp[1] = 0;
+         ^
+../src/lab4.c:84:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[1].comp[2] = 0;
+         ^
+../src/lab4.c:85:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[2].comp[0] = 1;
+         ^
+../src/lab4.c:86:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[2].comp[1] = 2;
+         ^
+../src/lab4.c:87:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[2].comp[2] = 1;
+         ^
+../src/lab4.c: In function 'displayMatrix':
+../src/lab4.c:100:31: error: request for member 'comp' in something not a structure or union
+    xil_printf("%3d ", input[i].comp[j]);
+                               ^
+../src/lab4.c: In function 'multiMatrixSoft':
+../src/lab4.c:121:18: error: request for member 'comp' in something not a structure or union
+      temp += A[i].comp[k]*B[j].comp[k];
+                  ^
+../src/lab4.c:121:31: error: request for member 'comp' in something not a structure or union
+      temp += A[i].comp[k]*B[j].comp[k];
+                               ^
+../src/lab4.c:124:9: error: request for member 'comp' in something not a structure or union
+     P[i].comp[j] = temp;
+         ^
+make: *** [src/lab4.o] Fejl 1
+11:47:43 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c:27:21: error: conflicting types for 'VectorArray'
+ typedef vectorType3 VectorArray[MSIZE3];
+                     ^~~~~~~~~~~
+../src/lab4.c:19:20: note: previous declaration of 'VectorArray' was here
+ typedef vectorType VectorArray[MSIZE];
+                    ^~~~~~~~~~~
+../src/lab4.c:35:21: error: conflicting types for 'VectorArray'
+ typedef vectorType5 VectorArray[MSIZE5];
+                     ^~~~~~~~~~~
+../src/lab4.c:27:21: note: previous declaration of 'VectorArray' was here
+ typedef vectorType3 VectorArray[MSIZE3];
+                     ^~~~~~~~~~~
+../src/lab4.c:48:1: error: unknown type name 'VectorArray3'
+ VectorArray3 sobel3x, sobel3y;
+ ^~~~~~~~~~~~
+../src/lab4.c: In function 'setInputMatrices':
+../src/lab4.c:69:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[0].comp[0] = 1;
+         ^
+../src/lab4.c:70:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[0].comp[1] = 0;
+         ^
+../src/lab4.c:71:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[0].comp[2] = -1;
+         ^
+../src/lab4.c:72:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[1].comp[0] = 2;
+         ^
+../src/lab4.c:73:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[1].comp[1] = 0;
+         ^
+../src/lab4.c:74:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[1].comp[2] = -2;
+         ^
+../src/lab4.c:75:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[2].comp[0] = 1;
+         ^
+../src/lab4.c:76:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[2].comp[1] = 0;
+         ^
+../src/lab4.c:77:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3x[2].comp[2] = -1;
+         ^
+../src/lab4.c:79:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[0].comp[0] = -1;
+         ^
+../src/lab4.c:80:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[0].comp[1] = -2;
+         ^
+../src/lab4.c:81:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[0].comp[2] = -1;
+         ^
+../src/lab4.c:82:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[1].comp[0] = 0;
+         ^
+../src/lab4.c:83:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[1].comp[1] = 0;
+         ^
+../src/lab4.c:84:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[1].comp[2] = 0;
+         ^
+../src/lab4.c:85:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[2].comp[0] = 1;
+         ^
+../src/lab4.c:86:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[2].comp[1] = 2;
+         ^
+../src/lab4.c:87:9: error: subscripted value is neither array nor pointer nor vector
+  sobel3y[2].comp[2] = 1;
+         ^
+make: *** [src/lab4.o] Fejl 1
+11:48:08 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24340	   1164	   8312	  33816	   8418	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+11:51:00 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24532	   1164	   8312	  34008	   84d8	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+11:52:21 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+11:53:00 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24532	   1164	   8312	  34008	   84d8	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+11:53:16 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+11:54:10 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24532	   1164	   8312	  34008	   84d8	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+11:54:28 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+11:55:23 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24532	   1164	   8312	  34008	   84d8	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+11:55:41 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+12:04:25 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24788	   1164	   8328	  34280	   85e8	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+12:04:42 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+12:14:55 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25076	   1164	   8328	  34568	   8708	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+12:15:16 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+12:16:01 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25012	   1164	   8328	  34504	   86c8	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+12:16:15 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+12:16:28 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25076	   1164	   8328	  34568	   8708	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+12:16:56 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+12:18:08 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25092	   1164	   8328	  34584	   8718	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+12:18:26 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+12:20:03 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25120	   1164	   8328	  34612	   8734	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+12:20:58 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25120	   1164	   8328	  34612	   8734	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+12:21:10 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+12:23:41 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25172	   1164	   8328	  34664	   8768	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+12:24:07 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25184	   1164	   8328	  34676	   8774	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+12:24:24 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+12:26:11 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25184	   1164	   8328	  34676	   8774	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+12:26:25 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+12:31:55 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c:30:23: error: unknown type name 'VectorArray'
+ void setInputMatrices(VectorArray A, VectorArray B);
+                       ^~~~~~~~~~~
+../src/lab4.c:30:38: error: unknown type name 'VectorArray'
+ void setInputMatrices(VectorArray A, VectorArray B);
+                                      ^~~~~~~~~~~
+../src/lab4.c:31:20: error: unknown type name 'VectorArray'
+ void displayMatrix(VectorArray input);
+                    ^~~~~~~~~~~
+../src/lab4.c:32:22: error: unknown type name 'VectorArray'
+ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P);
+                      ^~~~~~~~~~~
+../src/lab4.c:32:37: error: unknown type name 'VectorArray'
+ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P);
+                                     ^~~~~~~~~~~
+../src/lab4.c:32:52: error: unknown type name 'VectorArray'
+ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P);
+                                                    ^~~~~~~~~~~
+../src/lab4.c:33:22: error: unknown type name 'VectorArray'
+ void multiMatrixHard(VectorArray A, VectorArray B, VectorArray P);
+                      ^~~~~~~~~~~
+../src/lab4.c:33:37: error: unknown type name 'VectorArray'
+ void multiMatrixHard(VectorArray A, VectorArray B, VectorArray P);
+                                     ^~~~~~~~~~~
+../src/lab4.c:33:52: error: unknown type name 'VectorArray'
+ void multiMatrixHard(VectorArray A, VectorArray B, VectorArray P);
+                                                    ^~~~~~~~~~~
+../src/lab4.c:38:1: error: unknown type name 'VectorArray'
+ VectorArray pInst, aInst, bInst;
+ ^~~~~~~~~~~
+../src/lab4.c:44:23: error: unknown type name 'VectorArray'
+ void setInputMatrices(VectorArray A, VectorArray B)
+                       ^~~~~~~~~~~
+../src/lab4.c:44:38: error: unknown type name 'VectorArray'
+ void setInputMatrices(VectorArray A, VectorArray B)
+                                      ^~~~~~~~~~~
+../src/lab4.c:100:20: error: unknown type name 'VectorArray'
+ void displayMatrix(VectorArray input)
+                    ^~~~~~~~~~~
+../src/lab4.c:132:22: error: unknown type name 'VectorArray'
+ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P)
+                      ^~~~~~~~~~~
+../src/lab4.c:132:37: error: unknown type name 'VectorArray'
+ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P)
+                                     ^~~~~~~~~~~
+../src/lab4.c:132:52: error: unknown type name 'VectorArray'
+ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P)
+                                                    ^~~~~~~~~~~
+../src/lab4.c: In function 'main':
+../src/lab4.c:179:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:179:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+make: *** [src/lab4.o] Fejl 1
+12:32:55 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c:29:20: error: unknown type name 'VectorArray'
+ void displayMatrix(VectorArray input);
+                    ^~~~~~~~~~~
+../src/lab4.c:30:22: error: unknown type name 'VectorArray'
+ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P);
+                      ^~~~~~~~~~~
+../src/lab4.c:30:37: error: unknown type name 'VectorArray'
+ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P);
+                                     ^~~~~~~~~~~
+../src/lab4.c:30:52: error: unknown type name 'VectorArray'
+ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P);
+                                                    ^~~~~~~~~~~
+../src/lab4.c:31:22: error: unknown type name 'VectorArray'
+ void multiMatrixHard(VectorArray A, VectorArray B, VectorArray P);
+                      ^~~~~~~~~~~
+../src/lab4.c:31:37: error: unknown type name 'VectorArray'
+ void multiMatrixHard(VectorArray A, VectorArray B, VectorArray P);
+                                     ^~~~~~~~~~~
+../src/lab4.c:31:52: error: unknown type name 'VectorArray'
+ void multiMatrixHard(VectorArray A, VectorArray B, VectorArray P);
+                                                    ^~~~~~~~~~~
+../src/lab4.c:36:1: error: unknown type name 'VectorArray'
+ VectorArray pInst, aInst, bInst;
+ ^~~~~~~~~~~
+../src/lab4.c:80:20: error: unknown type name 'VectorArray'
+ void displayMatrix(VectorArray input)
+                    ^~~~~~~~~~~
+../src/lab4.c:112:22: error: unknown type name 'VectorArray'
+ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P)
+                      ^~~~~~~~~~~
+../src/lab4.c:112:37: error: unknown type name 'VectorArray'
+ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P)
+                                     ^~~~~~~~~~~
+../src/lab4.c:112:52: error: unknown type name 'VectorArray'
+ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P)
+                                                    ^~~~~~~~~~~
+../src/lab4.c: In function 'main':
+../src/lab4.c:159:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:159:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+make: *** [src/lab4.o] Fejl 1
+12:34:08 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c:77:20: error: unknown type name 'VectorArray'
+ void displayMatrix(VectorArray input)
+                    ^~~~~~~~~~~
+../src/lab4.c:109:22: error: unknown type name 'VectorArray'
+ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P)
+                      ^~~~~~~~~~~
+../src/lab4.c:109:37: error: unknown type name 'VectorArray'
+ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P)
+                                     ^~~~~~~~~~~
+../src/lab4.c:109:52: error: unknown type name 'VectorArray'
+ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P)
+                                                    ^~~~~~~~~~~
+../src/lab4.c: In function 'main':
+../src/lab4.c:156:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:156:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+make: *** [src/lab4.o] Fejl 1
+12:34:28 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab4.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab4.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.o" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:118:23: warning: unused variable 'cntValueEnd' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+                       ^~~~~~~~~~~
+../src/lab4.c:118:8: warning: unused variable 'cntValueStart' [-Wunused-variable]
+    int cntValueStart, cntValueEnd;
+        ^~~~~~~~~~~~~
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23940	   1164	   8280	  33384	   8268	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+12:34:56 **** Incremental Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
