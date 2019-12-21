@@ -1,5 +1,6 @@
 #include "xparameters.h"
 #include "xscutimer.h"
+#include "math.h"
 
 //Timer defs
 #define TIMER_DEVICE_ID		XPAR_XSCUTIMER_0_DEVICE_ID
@@ -9,6 +10,7 @@
 #define MSIZE 4
 #define MSIZE3 3
 #define MSIZE5 5
+#define MSIZE7 7
 
 //Matrix 3x3
 typedef union {
@@ -26,14 +28,27 @@ typedef union {
 
 typedef vectorType5 VectorArray5[MSIZE5];
 
+//Matrix 7x7
+typedef union {
+	unsigned char comp[MSIZE7];
+	unsigned int vect;
+} vectorType7;
+
+typedef vectorType7 VectorArray7[MSIZE7];
 
 void initKernels();
-void displayMatrix3(VectorArray3 input);
-
+void setInputMatrices(VectorArray3 A, int matrixSize);
+void setTestMatrix5(VectorArray5 A, int matrixSize);
+void displayMatrix3(VectorArray3 input, int matrixSize);
+void displayMatrix5(VectorArray5 input, int matrixSize);
+int convolutionSoft(VectorArray3 kernel, VectorArray3 A, int matrixSize);
+int conv2Directions(VectorArray3 kernel1, VectorArray3 kernel2, VectorArray3 A, int matrixSize);
+void padding(VectorArray5 mSource, VectorArray7 mDest);
 
 //Global variables
 VectorArray3 aInst3, sobel3x, sobel3y;
-
+VectorArray5 testMatrix, dest5;
+VectorArray7 testMatrixPadded;
 
 void initKernels()
 {
@@ -59,14 +74,14 @@ void initKernels()
 }
 
 
-void setInputMatrices3(VectorArray3 A)
+void setTestMatrix5(VectorArray5 A, int matrixSize)
 {
 	int aVal = 1;
 	int i;
-	for(i = 0; i<MSIZE3; i++)
+	for(i = 0; i<matrixSize; i++)
 	{
 		int j;
-		for(j = 0; j<MSIZE3; j++)
+		for(j = 0; j<matrixSize; j++)
 		{
 			A[i].comp[j] = aVal;
 			aVal++;
@@ -74,36 +89,147 @@ void setInputMatrices3(VectorArray3 A)
 	}
 }
 
-void displayMatrix3(VectorArray3 input)
+void setInputMatrices(VectorArray3 A, int matrixSize)
+{
+	int aVal = 1;
+	int i;
+	for(i = 0; i<matrixSize; i++)
+	{
+		int j;
+		for(j = 0; j<matrixSize; j++)
+		{
+			A[i].comp[j] = aVal;
+			aVal++;
+		}
+	}
+}
+
+void displayMatrix3(VectorArray3 input, int matrixSize)
 {
 	xil_printf("Printing matrix: \r\n");
 	int i;
-	for(i = 0; i<MSIZE3; i++)
+	for(i = 0; i<matrixSize; i++)
 	{
 		int j;
-		for(j = 0; j<MSIZE3; j++)
+		for(j = 0; j<matrixSize; j++)
 		{
 			xil_printf("%3d ", input[i].comp[j]);
-			if(j == MSIZE3-1)
+			if(j == matrixSize-1)
 				xil_printf("\r\n");
 		}
 	}
 }
 
-int convolutionSoft(VectorArray3 kernel, VectorArray3 A)
+void displayMatrix5(VectorArray5 input, int matrixSize)
+{
+	xil_printf("Printing matrix: \r\n");
+	int i;
+	for(i = 0; i<matrixSize; i++)
+	{
+		int j;
+		for(j = 0; j<matrixSize; j++)
+		{
+			xil_printf("%3d ", input[i].comp[j]);
+			if(j == matrixSize-1)
+				xil_printf("\r\n");
+		}
+	}
+}
+
+void displayMatrix7(VectorArray7 input, int matrixSize)
+{
+	xil_printf("Printing matrix: \r\n");
+	int i;
+	for(i = 0; i<matrixSize; i++)
+	{
+		int j;
+		for(j = 0; j<matrixSize; j++)
+		{
+			xil_printf("%3d ", input[i].comp[j]);
+			if(j == matrixSize-1)
+				xil_printf("\r\n");
+		}
+	}
+}
+
+int convUniDirectionSoft(VectorArray3 kernel, VectorArray3 A, int matrixSize)
 {
 	int acc = 0;
 	int i;
-	for(i=0; i<MSIZE3; i++)
+	for(i=0; i<matrixSize; i++)
 	{
 		int j;
-		for(j=0; j<MSIZE3; j++)
+		for(j=0; j<matrixSize; j++)
 		{
-			acc += kernel[MSIZE3-1-i].comp[MSIZE3-1-j]*A[i].comp[j];
+			acc += kernel[matrixSize-1-i].comp[matrixSize-1-j]*A[i].comp[j];
 		}
 	}
 	return acc;
 }
+
+int convSoft(VectorArray3 kernel1, VectorArray3 kernel2, VectorArray3 A, int matrixSize)
+{
+	double res;
+	int x = convUniDirectionSoft(kernel1, A, matrixSize);
+	int y = convUniDirectionSoft(kernel2, A, matrixSize);
+	res = sqrt(pow(x,2)+pow(y,2));
+	return res;
+}
+
+//mSource is the image.
+void padding(VectorArray5 mSource, VectorArray7 mDest)
+{
+	int i;
+	for(i = 0; i<MSIZE7; i++)
+	{
+		int j;
+		for(j = 0; j<MSIZE7; j++)
+		{
+			if(i == 0 || j == 0 || i == MSIZE7 || j == MSIZE7)
+			{
+				mDest[i].comp[j] = 0;
+			}
+			else
+			{
+				mDest[i].comp[j] = mSource[i-1].comp[j-1];
+			}
+		}
+	}
+
+}
+
+void winSoft(VectorArray5 mSource, VectorArray5 mDest)
+{
+	VectorArray7 padded;
+	padding(mSource, padded);
+
+	int i;
+	for(i=1; i<MSIZE7-1; i++)
+	{
+		int j;
+		for(j=1; j<MSIZE7-1; j++)
+		{
+			VectorArray3 mConv;
+			int k;
+			for(k=-1; k<2; k++)
+			{
+				int l;
+				for(l=-1; l<2; l++)
+				{
+					mConv[1+k].comp[1+l] = padded[i+k].comp[j+l];
+
+				}
+
+			}
+
+			//displayMatrix3(mConv, MSIZE3);
+			mDest[i-1].comp[j-1] = convSoft(sobel3x, sobel3y, mConv, MSIZE3);
+			//xil_printf("Convolution result %d, %d is: %d \r\n", i, j, resul);
+		}
+	}
+}
+
+
 
 //====================================================
 
@@ -138,11 +264,47 @@ int main (void)
 
 
    initKernels();
-   setInputMatrices3(aInst3);
-   displayMatrix3(sobel3x);
-   displayMatrix3(aInst3);
+   setInputMatrices(aInst3, MSIZE3);
+   displayMatrix3(sobel3x, MSIZE3);
+   displayMatrix3(sobel3y, MSIZE3);
+   displayMatrix3(aInst3, MSIZE3);
    int result = 0;
-   result = convolutionSoft(sobel3x, aInst3);
-   xil_printf("Convolution result is: %d \r\n", result);
+   int convResult = 0;
+   result = convUniDirectionSoft(sobel3x, aInst3, MSIZE3);
+   xil_printf("Convolution in x direction. result is: %d \r\n", result);
+   result = convUniDirectionSoft(sobel3y, aInst3, MSIZE3);
+   xil_printf("Convolution in y direction. result is: %d \r\n", result);
+   convResult = convSoft(sobel3x, sobel3y, aInst3, MSIZE3);
+   xil_printf("Convolution result is: %d \r\n", convResult);
+
+   setTestMatrix5(testMatrix, MSIZE5);
+   displayMatrix5(testMatrix, MSIZE5);
+
+   padding(testMatrix, testMatrixPadded);
+   displayMatrix7(testMatrixPadded, MSIZE7);
+
+   winSoft(testMatrix, dest5);
+   displayMatrix5(dest5, MSIZE5);
 
 }
+
+
+
+
+/*
+ *    VectorArray3 tester;
+   tester[0].comp[0] = 9;
+   tester[0].comp[1] = 10;
+   tester[0].comp[2] = 0;
+   tester[1].comp[0] = 14;
+   tester[1].comp[1] = 15;
+   tester[1].comp[2] = 0;
+   tester[2].comp[0] = 19;
+   tester[2].comp[1] = 20;
+   tester[2].comp[2] = 0;
+
+   int testres;
+   testres = convSoft(sobel3x, sobel3y, tester, MSIZE3);
+   xil_printf("Convolution result is: %d \r\n", testres);
+ *
+ */
