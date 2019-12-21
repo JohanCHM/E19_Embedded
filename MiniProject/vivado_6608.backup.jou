@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Oct 27 11:27:12 2019
+# Process ID: 6608
+# Current directory: C:/ERTS_miniproject/E19_Embedded/MiniProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9128 C:\ERTS_miniproject\E19_Embedded\MiniProject\MiniProject.xpr
+# Log file: C:/ERTS_miniproject/E19_Embedded/MiniProject/vivado.log
+# Journal file: C:/ERTS_miniproject/E19_Embedded/MiniProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk -hwspec C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper.hdf
+launch_sdk -workspace C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk -hwspec C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper.hdf
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.runs/impl_1/system_wrapper.sysdef C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper.hdf
+
+launch_sdk -workspace C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk -hwspec C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.sdk/system_wrapper.hdf
