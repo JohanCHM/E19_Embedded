@@ -4112,3 +4112,1670 @@ arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
  107168	   2624	  25568	 135360	  210c0	sdFromClass.elf
 'Finished building: sdFromClass.elf.size'
 ' '
+08:59:49 **** Auto Build of project sdFromClass_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+09:00:15 **** Auto Build of project sdTest01_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling XilFFs Library"
+'Finished building libraries'
+09:00:43 **** Auto Build of configuration Debug for project sdTest01 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:112:27: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     SD_Transfer_read(FILE,(s8)dest_str,(1));
+                           ^
+'Finished building: ../src/main.c'
+' '
+'Building target: sdTest01.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdTest01.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdTest01.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdTest01.elf  |tee "sdTest01.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48212	   1188	  24512	  73912	  120b8	sdTest01.elf
+'Finished building: sdTest01.elf.size'
+' '
+09:00:45 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/FileSDCard.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/FileSDCard.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/FileSDCard.d" -MT"src/FileSDCard.o" -o "src/FileSDCard.o" "../src/FileSDCard.cpp"
+'Finished building: ../src/FileSDCard.cpp'
+' '
+'Building file: ../src/TestFileSDCard.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestFileSDCard.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestFileSDCard.d" -MT"src/TestFileSDCard.o" -o "src/TestFileSDCard.o" "../src/TestFileSDCard.cpp"
+'Finished building: ../src/TestFileSDCard.cpp'
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107168	   2624	  25568	 135360	  210c0	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:01:11 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107168	   2624	  25568	 135360	  210c0	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:01:32 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:02:08 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:15:01 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:15:31 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:16:58 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+../src/TestReadImg.cpp: In function 'void TestReadImg()':
+../src/TestReadImg.cpp:87:24: error: expected ')' before ']' token
+    printf("%d, %d ",i,j]);
+                        ^
+make: *** [src/TestReadImg.o] Error 1
+09:17:12 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107240	   2624	  25568	 135432	  21108	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:17:39 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:18:49 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 106920	   2624	  25568	 135112	  20fc8	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:19:11 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:20:35 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 106336	   2624	  25568	 134528	  20d80	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:21:28 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+../src/TestReadImg.cpp: In function 'void TestReadImg()':
+../src/TestReadImg.cpp:65:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int j = 0; j < sizeof(readImg); j++)
+                  ~~^~~~~~~~~
+../src/TestReadImg.cpp:68:25: error: 'i' was not declared in this scope
+     printf("(%d, %d)\n",i,j);
+                         ^
+make: *** [src/TestReadImg.o] Error 1
+09:21:42 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+../src/TestReadImg.cpp: In function 'void TestReadImg()':
+../src/TestReadImg.cpp:65:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int j = 0; j < sizeof(readImg); j++)
+                  ~~^~~~~~~~~
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 106408	   2624	  25568	 134600	  20dc8	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:22:13 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 106408	   2624	  25568	 134600	  20dc8	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:22:48 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:23:13 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:23:28 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:24:08 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 106408	   2624	  25568	 134600	  20dc8	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:24:13 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:24:32 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 106400	   2624	  25568	 134592	  20dc0	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:24:40 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:25:19 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 106400	   2624	  25568	 134592	  20dc0	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:25:28 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:26:09 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 106400	   2624	  25568	 134592	  20dc0	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:26:15 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:29:46 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 106920	   2624	  25568	 135112	  20fc8	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:29:53 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:30:47 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107168	   2624	  25568	 135360	  210c0	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:31:26 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:32:07 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107168	   2624	  25568	 135360	  210c0	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:32:14 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:34:08 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107168	   2624	  25568	 135360	  210c0	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:34:15 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:37:00 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107168	   2624	  25568	 135360	  210c0	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:37:18 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:37:51 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107168	   2624	  25568	 135360	  210c0	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:37:59 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:39:44 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107240	   2624	  25568	 135432	  21108	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:39:51 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107240	   2624	  25568	 135432	  21108	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:39:56 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:40:58 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107240	   2624	  25568	 135432	  21108	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:41:03 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:45:50 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107248	   2624	  25568	 135440	  21110	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:45:56 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:46:52 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107320	   2624	  25568	 135512	  21158	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:46:58 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:47:12 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107320	   2624	  25568	 135512	  21158	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:47:20 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:47:46 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107320	   2624	  25568	 135512	  21158	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:48:05 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107320	   2624	  25568	 135512	  21158	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:48:51 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:49:55 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107320	   2624	  25568	 135512	  21158	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:50:11 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:51:11 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107320	   2624	  25568	 135512	  21158	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:51:18 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:52:11 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107320	   2624	  25568	 135512	  21158	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:52:16 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:53:55 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107320	   2624	  25568	 135512	  21158	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:54:07 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:56:24 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107320	   2624	  25568	 135512	  21158	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+09:56:37 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:07:57 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107200	   2624	  25600	 135424	  21100	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:08:21 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107200	   2624	  25600	 135424	  21100	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:08:26 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:09:59 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107280	   2624	  25600	 135504	  21150	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:10:11 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:10:41 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107280	   2624	  25600	 135504	  21150	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:10:51 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:11:10 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:12:11 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107216	   2624	  25600	 135440	  21110	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:12:25 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107280	   2624	  25600	 135504	  21150	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:12:30 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:14:58 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107296	   2624	  25600	 135520	  21160	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:15:07 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:15:20 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:15:41 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:16:03 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:16:28 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:17:52 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107296	   2624	  25600	 135520	  21160	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:18:01 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:18:17 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:19:17 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107280	   2624	  25600	 135504	  21150	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:19:53 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107280	   2624	  25600	 135504	  21150	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:20:05 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:21:38 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107296	   2624	  25600	 135520	  21160	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:21:52 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:23:13 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107296	   2624	  25600	 135520	  21160	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:23:36 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:24:11 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:25:08 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:27:04 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+../src/TestReadImg.cpp: In function 'void TestReadImg()':
+../src/TestReadImg.cpp:74:44: error: invalid types 'uint8_t [imgFileSize] {aka unsigned char [imgFileSize]}[double]' for array subscript
+  printf("primer: %u\n", readImg[counter+100]);
+                                            ^
+../src/TestReadImg.cpp:80:37: error: invalid types 'uint8_t [imgFileSize] {aka unsigned char [imgFileSize]}[double]' for array subscript
+    imgMatrix[i][j] = readImg[counter];
+                                     ^
+../src/TestReadImg.cpp:81:55: warning: format '%d' expects argument of type 'int', but argument 5 has type 'double' [-Wformat=]
+    printf("(%d, %d) de %d: %d\n",i,j,imgWidth, counter);
+                                                       ^
+make: *** [src/TestReadImg.o] Error 1
+10:27:58 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107296	   2624	  25600	 135520	  21160	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:28:14 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107296	   2624	  25600	 135520	  21160	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:28:34 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:29:38 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107296	   2624	  25600	 135520	  21160	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:29:54 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:30:28 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:31:56 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107360	   2624	  25600	 135584	  211a0	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:32:03 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:33:36 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107280	   2624	  25600	 135504	  21150	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:33:44 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:34:15 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:35:34 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107280	   2624	  25600	 135504	  21150	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:35:43 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:36:06 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:36:31 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107280	   2624	  25600	 135504	  21150	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:37:03 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107200	   2624	  25600	 135424	  21100	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:37:23 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107200	   2624	  25600	 135424	  21100	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:37:53 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:38:22 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:39:01 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107200	   2624	  25600	 135424	  21100	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:39:28 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+../src/TestReadImg.cpp: In function 'void TestReadImg()':
+../src/TestReadImg.cpp:58:10: warning: variable 'imgMatrix' set but not used [-Wunused-but-set-variable]
+  uint8_t imgMatrix[imgHeight][imgWidth];
+          ^~~~~~~~~
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 106752	   2624	  25600	 134976	  20f40	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '
+10:39:58 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:40:07 **** Incremental Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+10:41:00 **** Auto Build of configuration Debug for project sdFromClass ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/TestReadImg.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TestReadImg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TestReadImg.d" -MT"src/TestReadImg.o" -o "src/TestReadImg.o" "../src/TestReadImg.cpp"
+'Finished building: ../src/TestReadImg.cpp'
+' '
+'Building target: sdFromClass.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "sdFromClass.elf"  ./src/FileSDCard.o ./src/TestFileSDCard.o ./src/TestReadImg.o ./src/main.o ./src/old_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdFromClass.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107200	   2624	  25600	 135424	  21100	sdFromClass.elf
+'Finished building: sdFromClass.elf.size'
+' '

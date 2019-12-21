@@ -10,10 +10,11 @@
 #define IMG_HEIGHT 22
 #define COLOR_PLANES 26
 
+static uint8_t hdr[55];
 
-static uint8_t hdr[54];
+int counter = 1;
 
-int counter = 0;
+int imgFileSize, initialDataByte, imgRealSize, imgWidth, imgHeight, numColorPlanes;
 
 void TestReadImg(void)
 {
@@ -34,62 +35,63 @@ void TestReadImg(void)
 	if (result != XST_SUCCESS)
 		printf("Failed reading header from Img\r\n");
 
-	int imgFileSize = hdr[IMG_SIZE] | hdr[IMG_SIZE + 1] << 8 | hdr[IMG_SIZE + 2] << 16 | hdr[IMG_SIZE + 2] << 24;
+	imgFileSize = hdr[IMG_SIZE] | hdr[IMG_SIZE + 1] << 8 | hdr[IMG_SIZE + 2] << 16 | hdr[IMG_SIZE + 2] << 24;
 	printf("Img File Size : %d bytes\n", imgFileSize);
 
-	int initialDataByte = hdr[IMG_FIRST_DATA] | hdr[IMG_FIRST_DATA + 1] << 8 | hdr[IMG_FIRST_DATA + 2] << 16 | hdr[IMG_FIRST_DATA + 2] << 24;
+	initialDataByte = hdr[IMG_FIRST_DATA] | hdr[IMG_FIRST_DATA + 1] << 8 | hdr[IMG_FIRST_DATA + 2] << 16 | hdr[IMG_FIRST_DATA + 2] << 24;
 	printf("Initial Data Byte : %d\n", initialDataByte);
 
-	int imgRealSize = imgFileSize - initialDataByte;
+	imgRealSize = imgFileSize - initialDataByte;
 	printf("Img Real Size : %d bytes\n", imgRealSize);
 
-	int imgWidth = hdr[IMG_WIDTH] | hdr[IMG_WIDTH + 1] << 8 | hdr[IMG_WIDTH + 2] << 16 | hdr[IMG_WIDTH + 2] << 24;
+	imgWidth = hdr[IMG_WIDTH] | hdr[IMG_WIDTH + 1] << 8 | hdr[IMG_WIDTH + 2] << 16 | hdr[IMG_WIDTH + 2] << 24;
 	printf("Width : %d px\n", imgWidth);
 
-	int imgHeight = hdr[IMG_HEIGHT] | hdr[IMG_HEIGHT + 1] << 8 | hdr[IMG_HEIGHT + 2] << 16 | hdr[IMG_HEIGHT + 2] << 24;
+	imgHeight = hdr[IMG_HEIGHT] | hdr[IMG_HEIGHT + 1] << 8 | hdr[IMG_HEIGHT + 2] << 16 | hdr[IMG_HEIGHT + 2] << 24;
 	printf("Height : %d px\n", imgHeight);
 
-	int numColorPlanes = hdr[COLOR_PLANES];
+	numColorPlanes = hdr[COLOR_PLANES];
 	printf("Number of colors : %d \n", numColorPlanes);
 
-	uint8_t completeHeader[initialDataByte - 1];
-	result = file.read((void *)completeHeader, sizeof(completeHeader), true);
-	if (result != XST_SUCCESS)
-		printf("Failed reading Complete Header\r\n");
+	// uint8_t completeHeader[initialDataByte - 1];
+	uint8_t readImg[imgFileSize];
+	uint8_t imgMatrix[imgHeight][imgWidth];
 
-	uint8_t readImg[imgRealSize];
-	result = file.read((void *)readImg, sizeof(readImg), false);
+	// Read the complete header to move the position to the initialization of img content
+	// result = file.read((void *)completeHeader, sizeof(completeHeader), true);
+	// if (result != XST_SUCCESS)
+	// 	printf("Failed reading Complete Header\r\n");
+
+	// Read of the image content
+	result = file.read((void *)readImg, sizeof(readImg), true);
 	if (result != XST_SUCCESS)
 		printf("Failed reading image\r\n");
 
-	uint8_t imgMatrix[imgHeight][imgWidth];
-	int counter = 0;
+	// Convertion into a matrix (array of arrays)
+	counter = initialDataByte;
 
-//	for (int i = 0; i < 35; i++)
-//	{
-//		printf("%d: %x\n", i, completeHeader[i]);
-//	}
+	int temp = imgWidth; // Holder because variable gets change in middle of the for
 
-	for (int i = 0; i < imgHeight; i++)
+	for (int i = imgHeight - 1; i >= 0; i--) // It start from the bottom of the img
 	{
-		for (int j = 0; j < imgWidth; j++)
+		for (int j = 0; j < temp; j++)
 		{
 			imgMatrix[i][j] = readImg[counter];
 			counter++;
 		}
 	}
-	//	print matrix
-	for (int i = 0; i < 10; i++)
+
+	//	print matrix for testing
+	for (int i = 0; i < 100; i++)
 	{
-		for (int j = 0; j < 20; j++)
+		for (int j = 0; j < 30; j++)
 		{
-			printf("%u ",imgMatrix[i][j]);
+			printf("%u ", imgMatrix[i][j]);
 		}
 		printf("\n");
 	}
-
+	// TODO: Error closing file
 	result = file.close();
 	if (result != XST_SUCCESS)
 		printf("Failed closing file\r\n");
-
 }

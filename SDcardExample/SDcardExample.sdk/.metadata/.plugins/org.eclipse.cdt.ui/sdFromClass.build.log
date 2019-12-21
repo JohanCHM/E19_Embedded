@@ -1,4 +1,4 @@
-21:05:43 **** Auto Build of configuration Debug for project sdFromClass ****
+10:41:00 **** Auto Build of configuration Debug for project sdFromClass ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -15,9 +15,9 @@ arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size sdFromClass.elf  |tee "sdFromClass.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 107168	   2624	  25568	 135360	  210c0	sdFromClass.elf
+ 107200	   2624	  25600	 135424	  21100	sdFromClass.elf
 'Finished building: sdFromClass.elf.size'
 ' '
 
-21:05:46 Build Finished (took 2s.643ms)
+10:41:01 Build Finished (took 933ms)
 

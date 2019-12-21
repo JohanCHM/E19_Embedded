@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Dec 21 08:58:46 2019
+# Process ID: 16876
+# Current directory: C:/master/EmbeddedPRJ/SDcardExample
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11292 C:\master\EmbeddedPRJ\SDcardExample\SDcardExample.xpr
+# Log file: C:/master/EmbeddedPRJ/SDcardExample/vivado.log
+# Journal file: C:/master/EmbeddedPRJ/SDcardExample\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.xpr
+INFO: [Project 1-313] Project file moved from 'C:/master/Embedded/sandbox/SDcardExample' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/master/vivado-library-2016.4-1/vivado-library'; using path 'C:/master/Embedded/vivado-library-2016.4-1/vivado-library' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/master/Embedded/vivado-library-2016.4-1/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_0' generated file not found 'c:/master/EmbeddedPRJ/SDcardExample/SDcardExample.srcs/sources_1/bd/system/ip/system_auto_pc_0/stats.txt'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 920.438 ; gain = 192.309
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk -hwspec C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk -hwspec C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.

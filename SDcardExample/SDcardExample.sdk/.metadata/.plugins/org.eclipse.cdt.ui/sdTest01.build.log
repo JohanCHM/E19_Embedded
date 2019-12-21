@@ -1,4 +1,4 @@
-17:33:16 **** Auto Build of configuration Debug for project sdTest01 ****
+09:00:43 **** Auto Build of configuration Debug for project sdTest01 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -23,5 +23,5 @@ arm-none-eabi-size sdTest01.elf  |tee "sdTest01.elf.size"
 'Finished building: sdTest01.elf.size'
 ' '
 
-17:33:17 Build Finished (took 936ms)
+09:00:45 Build Finished (took 1s.975ms)
 
