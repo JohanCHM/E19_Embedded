@@ -2,11 +2,11 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Sun Oct 27 11:32:05 2019
-# Process ID: 7180
-# Current directory: C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.runs/impl_1
+# Start of session at: Sat Dec 21 14:19:52 2019
+# Process ID: 21040
+# Current directory: C:/master/EmbeddedPRJ/MiniProject/MiniProject.runs/impl_1
 # Command line: vivado.exe -log system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
-# Log file: C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.runs/impl_1/system_wrapper.vdi
-# Journal file: C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.runs/impl_1\vivado.jou
+# Log file: C:/master/EmbeddedPRJ/MiniProject/MiniProject.runs/impl_1/system_wrapper.vdi
+# Journal file: C:/master/EmbeddedPRJ/MiniProject/MiniProject.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source system_wrapper.tcl -notrace

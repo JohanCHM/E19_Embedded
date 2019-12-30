@@ -1,0 +1,38 @@
+/*
+ * FileSDCard.cpp
+ *
+ *  Created on: 2. dec. 2018
+ *      Author: Kim Bjerge
+ */
+#include "ImageSDCard.h"
+
+
+int ImageSDCard::mount(bool remount)
+{
+	return image.mount(remount);
+}
+
+int ImageSDCard::open(char *name, BYTE mode)
+{
+	return image.open(name, mode);
+}
+
+int ImageSDCard::read(void *buffer, int size, bool fromStart)
+{
+	return image.read(buffer,size, fromStart);
+}
+
+int ImageSDCard::write(const void* buffer, int size, bool append)
+{
+	return image.write(buffer, size, append);
+}
+
+int ImageSDCard::close()
+{
+	return image.close();
+}
+
+// static int ImageSDCard::imgFileSize(const void* buffer)
+// {
+
+// }

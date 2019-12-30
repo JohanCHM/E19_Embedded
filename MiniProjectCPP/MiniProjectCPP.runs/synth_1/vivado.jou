@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Dec 27 08:12:20 2019
+# Process ID: 20184
+# Current directory: C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.runs/synth_1
+# Command line: vivado.exe -log solution_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source solution_wrapper.tcl
+# Log file: C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.runs/synth_1/solution_wrapper.vds
+# Journal file: C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source solution_wrapper.tcl -notrace
