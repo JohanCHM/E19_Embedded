@@ -1,0 +1,55 @@
+/*
+ * ImageSDCard.h
+ *
+ * Based on FileSDCard by: Kim Bjerge
+ */
+
+#ifndef SRC_IMAGESDCARD_H_
+#define SRC_IMAGESDCARD_H_
+#include <string.h>
+#include "xsdps.h"		/* SD device driver */
+#include "ff.h"
+#include "FileSDCard.h"
+
+#define IMGPIX 11078
+#define IMG_SIZE 2
+#define IMG_FIRST_DATA 10
+#define IMG_WIDTH 18
+#define IMG_HEIGHT 22
+#define COLOR_PLANES 26
+
+class ImageSDCard
+{
+public:
+
+	ImageSDCard(char* path)
+	{
+		strcpy(pathName, path);
+		strcpy(fileName, "");
+        image((char*)"0:/");
+	}
+
+	int mount(bool remount=false); // Mount SD card to FAT file system
+
+    int open(char *name, BYTE mode); // mode = FA_OPEN_EXISTING | FA_CREATE_ALWAYS | FA_WRITE | FA_READ - see ff.h
+//    int setPos()
+    int read(void *buffer, int size, bool fromStart=true); // Default read from start of file (fromStart=true)
+    int write(const void* buffer, int size, bool append=false); // Default write to start of file (append=false)
+    int close();
+
+    unsigned int imgFileSize;
+    unsigned int initialDataByte; 
+    unsigned int imgRealSize;
+    unsigned int imgWidth; 
+    unsigned int imgHeight;
+    unsigned int numColorPlanes;
+
+    
+private:
+	TCHAR fileName[256];
+	TCHAR pathName[256];
+
+    FileSDCard image;
+};
+
+#endif /* SRC_FILESDCARD_H_ */

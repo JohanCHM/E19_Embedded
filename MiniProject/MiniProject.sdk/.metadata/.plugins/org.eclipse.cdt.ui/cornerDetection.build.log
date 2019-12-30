@@ -1,0 +1,8 @@
+12:26:11 **** Auto Build of configuration Debug for project cornerDetection ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+
+12:26:12 Build Finished (took 875ms)
+

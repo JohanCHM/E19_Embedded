@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Dec 21 14:13:31 2019
+# Process ID: 18064
+# Current directory: C:/master/EmbeddedPRJ/MiniProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14832 C:\master\EmbeddedPRJ\MiniProject\MiniProject.xpr
+# Log file: C:/master/EmbeddedPRJ/MiniProject/vivado.log
+# Journal file: C:/master/EmbeddedPRJ/MiniProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/master/EmbeddedPRJ/MiniProject/MiniProject.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/master/EmbeddedPRJ/MiniProject/MiniProject.sdk -hwspec C:/master/EmbeddedPRJ/MiniProject/MiniProject.sdk/system_wrapper.hdf
+open_bd_design {C:/master/EmbeddedPRJ/MiniProject/MiniProject.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_SD0_PERIPHERAL_ENABLE {1} CONFIG.PCW_SD0_GRP_CD_ENABLE {1} CONFIG.PCW_SD0_GRP_CD_IO {MIO 47}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+validate_bd_design
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/master/EmbeddedPRJ/MiniProject/MiniProject.runs/impl_1/system_wrapper.sysdef C:/master/EmbeddedPRJ/MiniProject/MiniProject.sdk/system_wrapper.hdf
+

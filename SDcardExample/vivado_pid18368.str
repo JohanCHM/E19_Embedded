@@ -1,0 +1,198 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 18368
+License: Customer
+
+Current time: 	12/21/19 2:15:55 PM EST
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1620x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 314 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/WINDOWS/Sun/Java/bin;C:/WINDOWS/system32;C:/WINDOWS;C:/Xilinx/Vivado/2017.2/bin;C:/Xilinx/Vivado/2017.2/lib/win64.o;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;C:/Xilinx/SDK/2017.2/bin;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.2/bin;C:/ProgramData/DockerDesktop/version-bin;C:/Program Files/Docker/Docker/Resources/bin;C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common;C:/Program Files (x86)/Common Files/Oracle/Java/javapath;C:/WINDOWS/system32;C:/WINDOWS;C:/WINDOWS/System32/Wbem;C:/WINDOWS/System32/WindowsPowerShell/v1.0/;C:/WINDOWS/System32/OpenSSH/;C:/Program Files/Git/cmd;C:/Program Files/dotnet/;C:/Program Files/MATLAB/R2018b/bin;C:/Program Files/nodejs/;C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/;C:/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/;C:/Program Files/Microsoft SQL Server/120/Tools/Binn/;C:/Program Files/Microsoft SQL Server/120/DTS/Binn/;C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/;C:/Program Files/TortoiseSVN/bin;C:/Program Files/Cloud Foundry;C:/Users/Carlos/AppData/Local/GitHubDesktop/bin;C:/Users/Carlos/AppData/Local/hyper/app-2.1.1/resources/bin;C:/Users/Carlos/AppData/Roaming/npm;C:/Users/Carlos/AppData/Local/Programs/Microsoft VS Code/bin;C:/texlive/2019/bin/win32;C:/Users/Carlos/Anaconda3/Scripts;C:/Users/Carlos/Anaconda3;C:/Users/Carlos/AppData/Local/Microsoft/WindowsApps;;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	Carlos
+User home directory: C:/Users/Carlos
+User working directory: C:/master/EmbeddedPRJ/SDcardExample
+User country: 	MX
+User language: 	es
+User locale: 	es_MX
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.2
+RDI_DATADIR: C:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/Carlos/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/Carlos/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/Carlos/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	C:/master/EmbeddedPRJ/SDcardExample/.Xil/Vivado-18368-DESKTOP-R15FFHN
+
+GUI allocated memory:	189 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 493 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\master\EmbeddedPRJ\SDcardExample\SDcardExample.xpr. Version: Vivado v2017.2 
+// bs:g (cg:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 62 MB (+62239kb) [00:00:12]
+// [Engine Memory]: 473 MB (+344943kb) [00:00:12]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// Tcl Message: open_project C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.xpr 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 493 MB. GUI used memory: 34 MB. Current time: 12/21/19 2:15:58 PM EST
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 519 MB (+23243kb) [00:00:22]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 630 MB (+88542kb) [00:00:23]
+// Tcl Message: open_project C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/master/Embedded/sandbox/SDcardExample' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/master/vivado-library-2016.4-1/vivado-library'; using path 'C:/master/Embedded/vivado-library-2016.4-1/vivado-library' instead. INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/master/Embedded/vivado-library-2016.4-1/vivado-library'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 905.441 ; gain = 168.926 
+// Project name: SDcardExample; location: C:/master/EmbeddedPRJ/SDcardExample; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bs:g (cg:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.srcs/sources_1/bd/system/system.bd} 
+// Tcl Message: Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0 Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Successfully read diagram <system> from BD file <C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.srcs/sources_1/bd/system/system.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 683 MB (+22340kb) [00:00:38]
+// TclEventType: RSB_CONNECTION_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 697 MB. GUI used memory: 46 MB. Current time: 12/21/19 2:16:22 PM EST
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 914.113 ; gain = 8.672 
+// 'bv' command handler elapsed time: 9 seconds
+// Elapsed time: 10 seconds
+dismissDialog("Open Block Design"); // bs:g (cg:JFrame)
+// [GUI Memory]: 65 MB (+677kb) [00:00:43]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (processing_system7_0) elapsed time: 0.2s
+// Elapsed time: 14 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 121, 433, 949, 587, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// [GUI Memory]: 69 MB (+234kb) [00:00:58]
+// p:g (cg:JFrame): Customize Pin: addNotify
+// [Engine Memory]: 727 MB (+10429kb) [00:00:58]
+// [GUI Memory]: 78 MB (+5961kb) [00:01:00]
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Customize Pin"); // p:g (cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// M:bs (cg:JFrame):  Re-customize IP : addNotify
+// [GUI Memory]: 82 MB (+167kb) [00:01:05]
+// [Engine Memory]: 775 MB (+13061kb) [00:01:05]
+// HMemoryUtils.trashcanNow. Engine heap size: 775 MB. GUI used memory: 48 MB. Current time: 12/21/19 2:16:48 PM EST
+// p:g (cg:JFrame): Re-customize IP: addNotify
+// cm:p (p:g): Configuration Presets: addNotify
+dismissDialog("Re-customize IP"); // M:bs (cg:JFrame)
+// [GUI Memory]: 90 MB (+3929kb) [00:01:11]
+selectButton("MIO Configuration", "MIO Configuration"); // k:JideButton (ci:ButtonPanel, p:g)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals", 1); // aX:cv (JViewport:JComponent, p:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 841 MB. GUI used memory: 71 MB. Current time: 12/21/19 2:17:03 PM EST
+// [Engine Memory]: 844 MB (+30969kb) [00:01:22]
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO", 16); // aX:cv (JViewport:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cg:JFrame)
+// [GUI Memory]: 98 MB (+3337kb) [00:01:36]
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// M:bs (cg:JFrame):  Re-customize IP : addNotify
+// p:g (cg:JFrame): Re-customize IP: addNotify
+// cm:p (p:g): Configuration Presets: addNotify
+// [GUI Memory]: 107 MB (+3952kb) [00:01:49]
+// Elapsed time: 17 seconds
+dismissDialog("Re-customize IP"); // M:bs (cg:JFrame)
+selectButton("MIO Configuration", "MIO Configuration"); // k:JideButton (ci:ButtonPanel, p:g)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces", 0); // aX:cv (JViewport:JComponent, p:g)
+collapseTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces", 0); // aX:cv (JViewport:JComponent, p:g)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces", 0); // aX:cv (JViewport:JComponent, p:g)
+collapseTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces", 0); // aX:cv (JViewport:JComponent, p:g)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals", 1); // aX:cv (JViewport:JComponent, p:g)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "SD 0 ; MIO 40 .. 45 ;  ;  ;  ;  ;  ; ", 6); // aX:cv (JViewport:JComponent, p:g)
+// [GUI Memory]: 112 MB (+548kb) [00:02:35]
+// [GUI Memory]: 120 MB (+2419kb) [00:02:45]
+// WARNING: HTimer (StateMonitor Timer) is taking too long to process. Increasing delay to 4000 ms.
+// Elapsed time: 168 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cg:JFrame)
+// [GUI Memory]: 127 MB (+339kb) [00:07:11]
+// [GUI Memory]: 133 MB (+159kb) [00:12:06]
+// Elapsed time: 596 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, cg:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:p (cg:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:p)
+dismissDialog("Launch SDK"); // aa:p (cg:JFrame)
+// Tcl Message: launch_sdk -workspace C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk -hwspec C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk/system_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk -hwspec C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk/system_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// [GUI Memory]: 140 MB (+407kb) [00:22:39]
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 90 MB. Current time: 12/21/19 2:47:03 PM EST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 89 MB. Current time: 12/21/19 3:17:06 PM EST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 88 MB. Current time: 12/21/19 3:52:13 PM EST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 88 MB. Current time: 12/21/19 10:15:36 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 88 MB. Current time: 12/21/19 11:41:30 PM EST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// [GUI Memory]: 147 MB (+40kb) [09:27:31]
+// [GUI Memory]: 156 MB (+1459kb) [09:27:51]
+// [GUI Memory]: 165 MB (+906kb) [09:28:11]
+// [GUI Memory]: 174 MB (+654kb) [09:28:31]
+// [GUI Memory]: 183 MB (+207kb) [09:28:51]
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 88 MB. Current time: 12/22/19 12:11:29 AM EST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 89 MB. Current time: 12/22/19 1:12:56 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 89 MB. Current time: 12/22/19 1:42:59 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 89 MB. Current time: 12/22/19 5:56:43 AM EST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 88 MB. Current time: 12/22/19 11:43:30 AM EST
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 88 MB. Current time: 12/23/19 12:29:55 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 87 MB. Current time: 12/23/19 6:03:50 AM EST
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 88 MB. Current time: 12/23/19 6:33:46 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 80 MB. Current time: 12/23/19 9:35:34 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 82 MB. Current time: 12/24/19 6:48:02 AM EST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 7000 ms.

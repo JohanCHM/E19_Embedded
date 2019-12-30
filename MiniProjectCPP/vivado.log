@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Dec 30 12:19:24 2019
+# Process ID: 11632
+# Current directory: C:/master/EmbeddedPRJ/MiniProjectCPP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24228 C:\master\EmbeddedPRJ\MiniProjectCPP\MiniProjectCPP.xpr
+# Log file: C:/master/EmbeddedPRJ/MiniProjectCPP/vivado.log
+# Journal file: C:/master/EmbeddedPRJ/MiniProjectCPP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 814.988 ; gain = 46.289
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.sdk -hwspec C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.sdk/solution_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.sdk -hwspec C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.sdk/solution_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.

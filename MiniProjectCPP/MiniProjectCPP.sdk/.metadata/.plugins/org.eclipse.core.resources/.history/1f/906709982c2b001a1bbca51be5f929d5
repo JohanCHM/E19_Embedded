@@ -1,0 +1,68 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 3. dec. 2018
+ *      Author: au288681
+ */
+#include <stdio.h>
+#include <string>
+#include "ReadImg.h"
+//#include "Matrices.h"
+
+#ifndef SRC_MATRICES_H_
+#define SRC_MATRICES_H_
+
+//Matrix size
+#define MSIZE 4
+#define MSIZE3 3
+#define MSIZE5 5
+#define MSIZE7 7
+#define MSIZE100 100
+
+//Matrix 3x3
+typedef union {
+	signed char comp[MSIZE3];
+	signed int vect;
+} vectorType3;
+
+typedef vectorType3 VectorArray3[MSIZE3];
+
+//Matrix 5x5
+typedef union {
+	unsigned char comp[MSIZE5];
+	unsigned int vect;
+} vectorType5;
+
+typedef vectorType5 VectorArray5[MSIZE5];
+
+//Matrix 7x7
+typedef union {
+	unsigned char comp[MSIZE7];
+	unsigned int vect;
+} vectorType7;
+
+typedef vectorType7 VectorArray7[MSIZE7];
+
+typedef union{
+	unsigned char comp[MSIZE100];
+	unsigned int vect;
+} vectorType100;
+
+typedef vectorType100 VectorArray100[MSIZE100];
+
+
+
+int main()
+{
+   	int *p;	// properties.
+//	uint8_t imgMatrix[100][100];	// Image
+
+	VectorVectorArray100 imgMatrix;
+
+	p = ReadImgProperties((char *)"mod4.bmp");
+	ReadImg((char *)"mod5.bmp", p[0], p[4],p[3], p[1], imgMatrix);
+
+	printf("mat %d\r\n", imgMatrix[1][0]);
+
+	return 0;
+}

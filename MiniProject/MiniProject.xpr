@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="C:/ERTS_miniproject/E19_Embedded/MiniProject/MiniProject.xpr">
+<Project Version="7" Minor="20" Path="C:/master/EmbeddedPRJ/MiniProject/MiniProject.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="0ad99aa2e9124c90808b1282d965109f"/>
