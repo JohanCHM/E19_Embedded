@@ -4661,3 +4661,10 @@ configparams force-mem-access 0
 01:43:37 INFO  : Disconnected from the channel tcfchan#4.
 01:43:37 WARN  : channel "tcfchan#4" closed
 01:43:39 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:21:10 INFO  : Registering command handlers for SDK TCF services
+12:21:11 INFO  : Launching XSCT server: xsct.bat -interactive C:\master\EmbeddedPRJ\MiniProject\MiniProject.sdk\temp_xsdb_launch_script.tcl
+12:21:19 INFO  : XSCT server has started successfully.
+12:21:19 INFO  : Successfully done setting XSCT server connection channel  
+12:21:32 INFO  : Successfully done setting SDK workspace  
+12:21:32 INFO  : Processing command line option -hwspec C:/master/EmbeddedPRJ/MiniProject/MiniProject.sdk/system_wrapper.hdf.
+12:21:32 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_4.

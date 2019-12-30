@@ -1,0 +1,20 @@
+/*
+ * sobel.h
+ *
+ *  Created on: 30/12/2019
+ *      Author: Carlos
+ */
+
+#ifndef SRC_SOBEL_H_
+#define SRC_SOBEL_H_
+
+#include "Matrices.h"
+#include "math.h"
+
+VectorArray3 sobel3x, sobel3y;
+
+void initKernels();
+
+
+
+#endif /* SRC_SOBEL_H_ */

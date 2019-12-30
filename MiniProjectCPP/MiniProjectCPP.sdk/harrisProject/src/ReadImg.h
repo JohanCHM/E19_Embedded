@@ -3,7 +3,9 @@
 #include <stdio.h>
 #include <string>
 #include "xil_printf.h"
+
 #include "FileSDCard.h"
+#include "Matrices.h"
 
 #define IMGPIX 11078
 #define IMG_SIZE 2
@@ -28,6 +30,7 @@ int * ReadImgProperties(char *name)
 	FileSDCard image((char *)"0:/");
 
     result = image.mount();
+
 	if (result != XST_SUCCESS)
 	{
 		printf("Failed to mount SD card\r\n");
@@ -83,7 +86,7 @@ int * ReadImgProperties(char *name)
 }
 
 
-void ReadImg(char *name, int imgFlSz,int hgt, int wdt, int iniByte, uint8_t imgMatrix[100][100])
+void ReadImg(char *name, int imgFlSz,int hgt, int wdt, int iniByte, VectorArray100 imgMatrix)
 {
     uint8_t readImg[imgFlSz];
 	//uint8_t imgMatrix[hgt][wdt];
@@ -132,20 +135,14 @@ void ReadImg(char *name, int imgFlSz,int hgt, int wdt, int iniByte, uint8_t imgM
 			{
 				for (int j = 0; j < wdt; j++)
 				{
-					imgMatrix[i][j] = readImg[j];
+					imgMatrix[i].comp[j] = readImg[j];
 				}
 			}
 		}
 
 		//	print matrix for testing
-		for (int i = 0; i < 10; i++)
-		{
-			for (int j = 0; j < 10; j++)
-			{
-				printf("%u ", imgMatrix[i][j]);
-			}
-			printf("\n");
-		}
+//		displayMatrix100(imgMatrix, 100);
+
 	}
 
 

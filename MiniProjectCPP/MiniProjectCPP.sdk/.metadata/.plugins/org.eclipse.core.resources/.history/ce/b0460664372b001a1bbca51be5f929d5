@@ -1,0 +1,36 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 3. dec. 2018
+ *      Author: au288681
+ */
+#include <stdio.h>
+#include <string>
+#include "ReadImg.h"
+#include "Matrices.h"
+#include "Sobel.h"
+
+
+int main()
+{
+   	int *p;						// properties of the IMG
+	VectorArray100 imgMatrix;	// Matrix to storage IMG
+	VectorArray100 imgIx;		// Filtered IMG along X
+	VectorArray100 imgIy;		// Filtered IMG along Y
+
+	// Reading Images
+	p = ReadImgProperties((char *)"geeks.bmp");
+	ReadImg((char *)"geeks.bmp", p[0], p[4],p[3], p[1], imgMatrix);
+
+	// Sobel filtering
+	initKernels();
+
+	winIxSoft(imgMatrix, imgIx);
+	winIySoft(imgMatrix, imgIy);
+
+	// Display for Testing
+	//printf("mat %d\r\n", imgMatrix[1].comp[0]);
+	displayMatrix100(imgIx, 100);
+
+	return 0;
+}

@@ -7394,3 +7394,4 @@ con
 ----------------End of Script----------------
 
 14:38:27 INFO  : Launch script is exported to file 'C:\master\EmbeddedPRJ\SDcardExample\SDcardExample.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sdfromclass.elf_on_local.tcl'
+00:36:39 INFO  : Disconnected from the channel tcfchan#1.

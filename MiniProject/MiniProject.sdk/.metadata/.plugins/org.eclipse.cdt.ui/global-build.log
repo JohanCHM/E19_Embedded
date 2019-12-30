@@ -5955,3 +5955,12 @@ Nothing to build for project CornerDetectionCPP
 **** Build of configuration Debug for project CornerDetectionCPP ****
 
 Nothing to build for project CornerDetectionCPP
+12:26:11 **** Auto Build of configuration Debug for project cornerDetection ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+
+****  of configuration Debug for project CornerDetectionCPP ****
+
+Nothing to build for project CornerDetectionCPP

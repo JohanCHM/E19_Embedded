@@ -1,0 +1,33 @@
+/*
+ * Sobel.cpp
+ *
+ *  Created on: 30/12/2019
+ *      Author: Carlos
+ */
+
+#include "Sobel.h"
+
+void initKernels()
+{
+	sobel3x[0].comp[0] = 1;
+	sobel3x[0].comp[1] = 0;
+	sobel3x[0].comp[2] = -1;
+	sobel3x[1].comp[0] = 2;
+	sobel3x[1].comp[1] = 0;
+	sobel3x[1].comp[2] = -2;
+	sobel3x[2].comp[0] = 1;
+	sobel3x[2].comp[1] = 0;
+	sobel3x[2].comp[2] = -1;
+
+	sobel3y[0].comp[0] = -1;
+	sobel3y[0].comp[1] = -2;
+	sobel3y[0].comp[2] = -1;
+	sobel3y[1].comp[0] = 0;
+	sobel3y[1].comp[1] = 0;
+	sobel3y[1].comp[2] = 0;
+	sobel3y[2].comp[0] = 1;
+	sobel3y[2].comp[1] = 2;
+	sobel3y[2].comp[2] = 1;
+}
+
+

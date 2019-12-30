@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Dec 29 12:04:16 2019
+# Process ID: 13688
+# Current directory: C:/master/EmbeddedPRJ/MiniProjectCPP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17148 C:\master\EmbeddedPRJ\MiniProjectCPP\MiniProjectCPP.xpr
+# Log file: C:/master/EmbeddedPRJ/MiniProjectCPP/vivado.log
+# Journal file: C:/master/EmbeddedPRJ/MiniProjectCPP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.xpr
+update_compile_order -fileset sources_1
+niProjectCPP/MiniProjectCPP.srcs/sources_1/bd/solution/solution.bd}
+update_compile_order -fileset sources_1
+file copy -force C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.runs/impl_1/solution_wrapper.sysdef C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.sdk/solution_wrapper.hdf
+
+launch_sdk -workspace C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.sdk -hwspec C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.sdk/solution_wrapper.hdf
+launch_sdk -workspace C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.sdk -hwspec C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.sdk/solution_wrapper.hdf

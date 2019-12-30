@@ -1,34 +1,38 @@
 /*
  * main.cpp
  *
- *  Created on: 3. dec. 2018
- *      Author: au288681
  */
 #include <stdio.h>
 #include <string>
 #include "ReadImg.h"
-
-void TestFileSDCard(void);
-
-// void TestReadImg(void);
-
+#include "Matrices.h"
+#include "Sobel.h"
 
 
 int main()
 {
+   	int *p;						// properties of the IMG
+	VectorArray100 imgMatrix;	// Matrix to storage IMG
+	VectorArray100 imgIx;		// Filtered IMG along X
+	VectorArray100 imgIy;		// Filtered IMG along Y
 
-	// properties.
-   	int *p;
+	// Reading Images
+	printf("Reading Image \r\n");
+	p = ReadImgProperties((char *)"geeks.bmp");
+	ReadImg((char *)"geeks.bmp", p[0], p[4],p[3], p[1], imgMatrix);
 
-	uint8_t imgMatrix[100][100];
-	printf("Demonstration of writing and reading files from SD card\r\n\r\n");
-	TestFileSDCard();
-	p = ReadImgProperties((char *)"mod4.bmp");
+	// Sobel filtering
+	printf("Initializing filters\r\n");
+	initKernels();
 
-	ReadImg((char *)"mod5.bmp", p[0], p[4],p[3], p[1], imgMatrix);
-	// TestReadImg();
+	printf("X filter\r\n");
+	winIxSoft(imgMatrix, imgIx);
+	printf("Y filter\r\n");
+	winIySoft(imgMatrix, imgIy);
 
-	printf("mat %d\r\n", imgMatrix[1][0]);
+	// Display for Testing
+	//printf("mat %d\r\n", imgMatrix[1].comp[0]);
+	displayMatrix100(imgIx, 100);
 
 	return 0;
 }

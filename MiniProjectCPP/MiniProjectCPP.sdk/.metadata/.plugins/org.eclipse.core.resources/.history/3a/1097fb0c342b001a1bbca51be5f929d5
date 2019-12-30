@@ -1,0 +1,79 @@
+/*
+ * Sobel.cpp
+ *
+ *  Created on: 30/12/2019
+ *      Author: Carlos
+ */
+
+#include "Sobel.h"
+
+void initKernels()
+{
+	sobel3x[0].comp[0] = 1;
+	sobel3x[0].comp[1] = 0;
+	sobel3x[0].comp[2] = -1;
+	sobel3x[1].comp[0] = 2;
+	sobel3x[1].comp[1] = 0;
+	sobel3x[1].comp[2] = -2;
+	sobel3x[2].comp[0] = 1;
+	sobel3x[2].comp[1] = 0;
+	sobel3x[2].comp[2] = -1;
+
+	sobel3y[0].comp[0] = -1;
+	sobel3y[0].comp[1] = -2;
+	sobel3y[0].comp[2] = -1;
+	sobel3y[1].comp[0] = 0;
+	sobel3y[1].comp[1] = 0;
+	sobel3y[1].comp[2] = 0;
+	sobel3y[2].comp[0] = 1;
+	sobel3y[2].comp[1] = 2;
+	sobel3y[2].comp[2] = 1;
+}
+
+int convUniDirectionSoft(VectorArray3 kernel, VectorArray3 A, int matrixSize)
+{
+	int acc = 0;
+	int i;
+	for(i=0; i<matrixSize; i++)
+	{
+		int j;
+		for(j=0; j<matrixSize; j++)
+		{
+			acc += kernel[matrixSize-1-i].comp[matrixSize-1-j]*A[i].comp[j];
+		}
+	}
+	return acc;
+}
+
+int convSoft(VectorArray3 kernel1, VectorArray3 kernel2, VectorArray3 A, int matrixSize)
+{
+	double res;
+	int x = convUniDirectionSoft(kernel1, A, matrixSize);
+	int y = convUniDirectionSoft(kernel2, A, matrixSize);
+	res = sqrt(pow(x,2)+pow(y,2));
+	return res;
+}
+
+//mSource is the image.
+void padding100(VectorArray100 mSource, VectorArray102 mDest)
+{
+	int i;
+	for(i = 0; i<MSIZE7; i++)
+	{
+		int j;
+		for(j = 0; j<MSIZE7; j++)
+		{
+			if(i == 0 || j == 0 || i == MSIZE7 || j == MSIZE7)
+			{
+				mDest[i].comp[j] = 0;
+			}
+			else
+			{
+				mDest[i].comp[j] = mSource[i-1].comp[j-1];
+			}
+		}
+	}
+
+}
+
+

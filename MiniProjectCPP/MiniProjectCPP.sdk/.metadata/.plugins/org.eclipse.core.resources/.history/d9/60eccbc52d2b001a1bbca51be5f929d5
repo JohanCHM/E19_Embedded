@@ -1,0 +1,26 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 3. dec. 2018
+ *      Author: au288681
+ */
+#include <stdio.h>
+#include <string>
+#include "ReadImg.h"
+#include "Matrices.h"
+
+
+int main()
+{
+   	int *p;	// properties.
+//	uint8_t imgMatrix[100][100];	// Image
+
+	VectorArray100 imgMatrix;
+
+	p = ReadImgProperties((char *)"mod4.bmp");
+	ReadImg((char *)"mod5.bmp", p[0], p[4],p[3], p[1], imgMatrix);
+
+	printf("mat %d\r\n", imgMatrix[1].comp[0]);
+
+	return 0;
+}
