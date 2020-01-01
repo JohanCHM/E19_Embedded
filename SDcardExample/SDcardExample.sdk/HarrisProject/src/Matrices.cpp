@@ -72,7 +72,7 @@ void displayMatrix102(VectorArray102 input, int matrixSize)
 	}
 }
 
-void displayIntMat100(int matrix[100][100], int height=100, int width=100)
+void displayIntMat100(int* matrix, int height=100, int width=100)
 {
 	printf("Printing matrix: \r\n");
 	int i;
@@ -81,7 +81,7 @@ void displayIntMat100(int matrix[100][100], int height=100, int width=100)
 		int j;
 		for (j = 0; j < width; j++)
 		{
-			printf("%4d ", matrix[i][j]);
+			printf("%4d ", *(matrix + i*MSIZE100 + j));
 			if (j == width - 1)
 				printf("\r\n");
 		}
