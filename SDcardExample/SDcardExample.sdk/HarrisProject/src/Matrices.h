@@ -67,7 +67,7 @@ typedef vectorSigType100 VectorSigArray100[MSIZE100];
 void displayMatrix3(VectorArray3 input, int matrixSize);
 void displayMatrix100(VectorArray100 input, int matrixSize);
 void displaySigMatrix100(VectorSigArray100 input, int matrixSize);
-void displayMatrix102(VectorArray102 input, int matrixSize);
+void displayMatrix102(VectorArray102 input, int height, int width);
 
 void displayIntMat100(int matrix[100][100], int height, int width);
 

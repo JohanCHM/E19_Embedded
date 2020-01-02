@@ -56,17 +56,17 @@ void displaySigMatrix100(VectorSigArray100 input, int matrixSize)
 }
 
 
-void displayMatrix102(VectorArray102 input, int matrixSize)
+void displayMatrix102(VectorArray102 input, int heightmatrix, int widthMatrix)
 {
 	printf("Printing matrix: \r\n");
 	int i;
-	for(i = 0; i<matrixSize; i++)
+	for(i = 0; i<heightmatrix; i++)
 	{
 		int j;
-		for(j = 0; j<matrixSize; j++)
+		for(j = 0; j<widthMatrix; j++)
 		{
 			printf("%3d ", input[i].comp[j]);
-			if(j == matrixSize-1)
+			if(j == widthMatrix-1)
 				printf("\r\n");
 		}
 	}

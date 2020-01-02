@@ -8,6 +8,7 @@
 #include "ReadImg.h"
 #include "Matrices.h"
 #include "Sobel.h"
+#include <math.h> 
 
 int main()
 {
@@ -19,6 +20,7 @@ int main()
 //	int* imgIy = new int[MSIZE100 * MSIZE100];
 	//	VectorArray100 imgIy;		// Filtered IMG along Y
 	VectorArray102 padMat;
+	int i, j, k;
 
 
 	// Reading Images
@@ -41,20 +43,20 @@ int main()
 	// displayMatrix3(sobelKernel3x, MSIZE3);
 	
 
-	sobelKernel3y[0].comp[0] = -1;
-	sobelKernel3y[0].comp[1] = -2;
-	sobelKernel3y[0].comp[2] = -1;
+	sobelKernel3y[0].comp[0] = 1;
+	sobelKernel3y[0].comp[1] = 2;
+	sobelKernel3y[0].comp[2] = 1;
 	sobelKernel3y[1].comp[0] = 0;
 	sobelKernel3y[1].comp[1] = 0;
 	sobelKernel3y[1].comp[2] = 0;
-	sobelKernel3y[2].comp[0] = 1;
-	sobelKernel3y[2].comp[1] = 2;
-	sobelKernel3y[2].comp[2] = 1;
+	sobelKernel3y[2].comp[0] = -1;
+	sobelKernel3y[2].comp[1] = -2;
+	sobelKernel3y[2].comp[2] = -1;
 	// displayMatrix3(sobelKernel3y, MSIZE3);
 
 	printf("Creating padded matrix\r\n");
 	padding100(imgMatrix, padMat);
-	displayMatrix102(padMat, 20);
+	displayMatrix102(padMat, 20, 20);
 
 	printf("X filter\r\n");
 	int* imgIx = new int[100*100];
@@ -77,14 +79,14 @@ int main()
 		}
 	}
 	printf("Printing matrix: \r\n");
-	int i;
-	for (i = 0; i < 20; i++)
+
+	for (i = 0; i < 1; i++)
 	{
 		int j;
-		for (j = 0; j < 20; j++)
+		for (j = 0; j <= 100; j++)
 		{
-			printf("%4d ", *(imgIx + i*MSIZE100 + j));
-			if (j == 20 - 1)
+			printf("%4d ", *(imgIx + i*MSIZE100 + j) );
+			if (j == 100 - 1)
 				printf("\r\n");
 		}
 	}
@@ -120,6 +122,39 @@ int main()
 		for (j = 0; j < 20; j++)
 		{
 			printf("%6d ", *(imgIy + i*MSIZE100 + j));
+			if (j == 20 - 1)
+				printf("\r\n");
+		}
+	}
+
+	//Matrix multiplication
+	// For Ixx
+	printf("Ixx: \r\n");
+	int* imgIxx = new int[100*100];
+
+	for (i = 0; i < MSIZE100; ++i)
+	{
+		for (j = 0; j < MSIZE100; ++j)
+		{
+			*(imgIxx + i * MSIZE100 + j) = 0;
+//			printf("first IXX: %4d \r\n",  *(imgIxx + i * MSIZE100 + j));
+			for (k = 0; k < MSIZE100; ++k)
+			{
+				*(imgIxx + i * MSIZE100 + j) += *(imgIx + i * MSIZE100 + k) * *(imgIx + k * MSIZE100 + j);
+//				printf("%2d %2d %d  IX1: %4d IX2: %4d prod: %4d IXX:  %4d \r\n",i,j, k+1, *(imgIx + i * MSIZE100 + k), *(imgIx + k * MSIZE100 + j),*(imgIx + i * MSIZE100 + k) * *(imgIx + k * MSIZE100 + j), *(imgIxx + i * MSIZE100 + j));
+			}
+
+//			printf("end IXX: %4d \r\n",  *(imgIxx + i * MSIZE100 + j));
+//			printf("------------ \r\n");
+		}
+	}
+
+	for (i = 0; i < 20; i++)
+	{
+		int j;
+		for (j = 0; j < 20; j++)
+		{
+			printf("%6d ", *(imgIxx + i * MSIZE100 + j));
 			if (j == 20 - 1)
 				printf("\r\n");
 		}

@@ -86,12 +86,12 @@ int convSoft(VectorArray3 kernel1, VectorArray3 kernel2, VectorArray3 A, int mat
 void padding100(VectorArray100 mSource, VectorArray102 mDest)
 {
 
-	for(int i = 0; i<MSIZE100; i++)
+	for(int i = 0; i<MSIZE102; i++)
 	{
 
-		for(int j = 0; j<MSIZE100; j++)
+		for(int j = 0; j<MSIZE102; j++)
 		{
-			if(i == 0 || j == 0 || i == MSIZE100 || j == MSIZE100)
+			if(i == 0 || j == 0 || i == MSIZE102 -1 || j == MSIZE102 -1)
 			{
 				mDest[i].comp[j] = 0;
 			}
