@@ -108,3 +108,22 @@ dismissDialog("Launch SDK"); // aa:p (cg:JFrame)
 // HMemoryUtils.trashcanNow. Engine heap size: 623 MB. GUI used memory: 40 MB. Current time: 12/31/19 2:38:58 AM EST
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
 // HMemoryUtils.trashcanNow. Engine heap size: 623 MB. GUI used memory: 41 MB. Current time: 12/31/19 3:09:02 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 623 MB. GUI used memory: 40 MB. Current time: 12/31/19 3:39:02 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 623 MB. GUI used memory: 41 MB. Current time: 12/31/19 9:54:03 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 623 MB. GUI used memory: 40 MB. Current time: 1/1/20 8:04:26 AM EST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// [GUI Memory]: 100 MB (+1215kb) [31:57:53]
+// [GUI Memory]: 106 MB (+855kb) [31:58:08]
+// [GUI Memory]: 114 MB (+1964kb) [31:58:28]
+// [GUI Memory]: 121 MB (+1586kb) [31:58:48]
+// [GUI Memory]: 128 MB (+1208kb) [31:59:08]
+// [GUI Memory]: 135 MB (+838kb) [31:59:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 623 MB. GUI used memory: 40 MB. Current time: 1/1/20 8:34:27 AM EST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 623 MB. GUI used memory: 40 MB. Current time: 1/1/20 1:44:13 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 623 MB. GUI used memory: 40 MB. Current time: 1/1/20 2:14:12 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 623 MB. GUI used memory: 40 MB. Current time: 1/1/20 2:44:12 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 623 MB. GUI used memory: 40 MB. Current time: 1/1/20 3:14:12 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 623 MB. GUI used memory: 40 MB. Current time: 1/1/20 3:44:13 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 623 MB. GUI used memory: 40 MB. Current time: 1/1/20 4:14:13 PM EST

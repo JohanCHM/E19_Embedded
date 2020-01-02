@@ -59,7 +59,7 @@ typedef vectorType102 VectorArray102[MSIZE102];
 
 typedef union{
 	int comp[MSIZE100];
-//	int vect;
+	int vect;
 } vectorSigType100;
 
 typedef vectorSigType100 VectorSigArray100[MSIZE100];

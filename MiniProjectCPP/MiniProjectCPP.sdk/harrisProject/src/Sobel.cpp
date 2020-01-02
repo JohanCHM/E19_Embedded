@@ -104,9 +104,9 @@ void padding100(VectorArray100 mSource, VectorArray102 mDest)
 
 }
 
-void winIxSoft(VectorArray100 mSource, VectorArray102 padded, VectorArray100 mDest)
+void winIxSoft(VectorArray102 padded, VectorArray100 mDest)
 {
-	padding100(mSource, padded);
+//	padding100(mSource, padded);
 
 //	displayMatrix100(mSource, MSIZE3);
 //	displayMatrix102(padded, MSIZE3);
