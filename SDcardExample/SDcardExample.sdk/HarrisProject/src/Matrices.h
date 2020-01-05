@@ -27,6 +27,13 @@ typedef union {
 
 typedef vectorType3 VectorArray3[MSIZE3];
 
+typedef union {
+	double comp[MSIZE3];
+	double vect;
+} vectorFloatType3;
+
+typedef vectorFloatType3 VectorFloatArray3[MSIZE3];
+
 //Matrix 5x5
 typedef union {
 	uint8_t comp[MSIZE5];
@@ -64,11 +71,22 @@ typedef union{
 
 typedef vectorSigType100 VectorSigArray100[MSIZE100];
 
+//typedef {
+//	int xLoc;
+//	int yLoc;
+//	double value;
+//} corners;
+
 void displayMatrix3(VectorArray3 input, int matrixSize);
+void displayMatrix3(VectorFloatArray3 input, int matrixSize);
 void displayMatrix100(VectorArray100 input, int matrixSize);
 void displaySigMatrix100(VectorSigArray100 input, int matrixSize);
 void displayMatrix102(VectorArray102 input, int height, int width);
 
-void displayIntMat100(int matrix[100][100], int height, int width);
+void displayMat(int matrix[MSIZE100*MSIZE100], int height, int width);
+void displayMat(int32_t matrix[MSIZE100*MSIZE100], int height, int width);
+void displayMat(float matrix[MSIZE100*MSIZE100], int height, int width);
+void displayMat(double matrix[MSIZE100*MSIZE100],int height, int width);
+void displayMat(long double matrix[MSIZE100*MSIZE100], int height, int width);
 
 #endif /* SRC_MATRICES_H_ */

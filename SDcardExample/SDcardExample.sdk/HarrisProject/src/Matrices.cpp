@@ -23,6 +23,23 @@ void displayMatrix3(VectorArray3 input, int matrixSize)
 	}
 }
 
+
+void displayMatrix3(VectorFloatArray3 input, int matrixSize)
+{
+	printf("Printing matrix: \r\n");
+	int i;
+	for(i = 0; i<matrixSize; i++)
+	{
+		int j;
+		for(j = 0; j<matrixSize; j++)
+		{
+			printf("%3.2f ", input[i].comp[j]);
+			if(j == matrixSize-1)
+				printf("\r\n");
+		}
+	}
+}
+
 void displayMatrix100(VectorArray100 input, int matrixSize)
 {
 	printf("Printing matrix: \r\n");
@@ -72,7 +89,7 @@ void displayMatrix102(VectorArray102 input, int heightmatrix, int widthMatrix)
 	}
 }
 
-void displayIntMat100(int* matrix, int height=100, int width=100)
+void displayMat(int matrix[MSIZE100*MSIZE100],int height, int width)
 {
 	printf("Printing matrix: \r\n");
 	int i;
@@ -81,7 +98,72 @@ void displayIntMat100(int* matrix, int height=100, int width=100)
 		int j;
 		for (j = 0; j < width; j++)
 		{
-			printf("%4d ", *(matrix + i*MSIZE100 + j));
+			printf("%8d ", *(matrix + i * MSIZE100 + j));
+			if (j == width - 1)
+				printf("\r\n");
+		}
+	}
+}
+
+void displayMat(int32_t matrix[MSIZE100*MSIZE100],int height, int width)
+{
+	printf("Printing matrix: \r\n");
+	int i;
+	for (i = 0; i < height; i++)
+	{
+		int j;
+		for (j = 0; j < width; j++)
+		{
+			printf("%8ld ", *(matrix + i * MSIZE100 + j));
+			if (j == width - 1)
+				printf("\r\n");
+		}
+	}
+}
+
+void displayMat(float matrix[MSIZE100*MSIZE100], int height, int width)
+{
+	printf("Printing matrix: \r\n");
+	int i;
+	for (i = 0; i < height; i++)
+	{
+		int j;
+		for (j = 0; j < width; j++)
+		{
+			printf("%8.2f ", *(matrix + i * MSIZE100+ j));
+			if (j == width - 1)
+				printf("\r\n");
+		}
+	}
+}
+
+
+void displayMat(double matrix[MSIZE100*MSIZE100],int height, int width)
+{
+	printf("Printing matrix: \r\n");
+	int i;
+	for (i = 0; i < height; i++)
+	{
+		int j;
+		for (j = 0; j < width; j++)
+		{
+			printf("%8.2f ", *(matrix + i * MSIZE100 + j));
+			if (j == width - 1)
+				printf("\r\n");
+		}
+	}
+}
+
+void displayMat(long double matrix[MSIZE100*MSIZE100], int height, int width)
+{
+	printf("Printing matrix: \r\n");
+	int i;
+	for (i = 0; i < height; i++)
+	{
+		int j;
+		for (j = 0; j < width; j++)
+		{
+			printf("%Lf ", *(matrix + i * MSIZE100 + j));
 			if (j == width - 1)
 				printf("\r\n");
 		}

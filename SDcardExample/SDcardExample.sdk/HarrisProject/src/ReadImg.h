@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string>
 #include "xil_printf.h"
+#include <vector>
 
 #include "FileSDCard.h"
 #include "Matrices.h"
@@ -157,6 +158,46 @@ void ReadImg(char *name, int imgFlSz,int hgt, int wdt, int iniByte, VectorArray1
 	// }
 
 
+}
+
+void WriteData(double *matrix, int matSize)
+{
+	printf("Writing data to a RESULTS file");
+
+	int result;
+	FileSDCard file((char*)"0:/");
+
+	char c[20];
+
+	result = file.open((char*)"RESULTb.csv", FA_CREATE_ALWAYS | FA_WRITE);
+	if (result != XST_SUCCESS) printf("Failed open file for writing\r\n");
+
+	double counta =0;
+	for (int i = 0; i < matSize; i++)
+	{
+		for (int j = 0; j < matSize; j++)
+		{
+			// printf(".");
+			counta++;
+			if(j != matSize - 1) // last of every row
+			{
+				sprintf(c, "%19.2lf,", *(matrix + i*matSize +j));
+			}
+			else
+			{
+				sprintf(c, "%19.2lf\n", *(matrix + i*matSize +j));
+			}
+			result = file.write((void *)c, sizeof(c) , true);
+			if (result != XST_SUCCESS) printf("Failed writing to file\r\n");
+
+		}
+	}
+
+
+	
+
+	result = file.close();
+	if (result != XST_SUCCESS) printf("Failed closing file\r\n");
 }
 
 

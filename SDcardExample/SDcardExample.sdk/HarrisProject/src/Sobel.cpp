@@ -73,6 +73,23 @@ int convUniDirectionSoft(VectorArray3 kernel, VectorArray3 A, int matrixSize)
 	return acc;
 }
 
+double convUniDirectionSoft(VectorFloatArray3 kernel, VectorFloatArray3 A, int matrixSize)
+{
+	double acc = 0;
+	int i;
+	for (i = 0; i < matrixSize; i++)
+	{
+		int j;
+		for (j = 0; j < matrixSize; j++)
+		{
+			acc += kernel[matrixSize - 1 - i].comp[matrixSize - 1 - j] * A[i].comp[j];
+		}
+	}
+	return acc;
+}
+
+
+
 int convSoft(VectorArray3 kernel1, VectorArray3 kernel2, VectorArray3 A, int matrixSize)
 {
 	double res;
