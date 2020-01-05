@@ -14,3 +14,4 @@ open_project C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.xpr
 update_compile_order -fileset sources_1
 launch_sdk -workspace C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk -hwspec C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk/system_wrapper.hdf
 launch_sdk -workspace C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk -hwspec C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk/system_wrapper.hdf
+launch_sdk -workspace C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk -hwspec C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk/system_wrapper.hdf

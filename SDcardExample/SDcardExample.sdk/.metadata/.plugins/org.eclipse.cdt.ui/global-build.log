@@ -25957,3 +25957,73 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: No se hace nada para `main-build'.
+08:53:11 **** Auto Build of configuration Debug for project HarrisProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: HarrisProject.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "HarrisProject.elf"  ./src/FileSDCard.o ./src/Matrices.o ./src/Sobel.o ./src/TestReadImg.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: HarrisProject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size HarrisProject.elf  |tee "HarrisProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 849067	   2880	4111808	4963755	 4bbdab	HarrisProject.elf
+'Finished building: HarrisProject.elf.size'
+' '
+09:08:32 **** Auto Build of configuration Debug for project HarrisProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: HarrisProject.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "HarrisProject.elf"  ./src/FileSDCard.o ./src/Matrices.o ./src/Sobel.o ./src/TestReadImg.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: HarrisProject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size HarrisProject.elf  |tee "HarrisProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 848587	   2880	4111808	4963275	 4bbbcb	HarrisProject.elf
+'Finished building: HarrisProject.elf.size'
+' '
+09:12:18 **** Auto Build of configuration Debug for project HarrisProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Matrices.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Matrices.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Matrices.d" -MT"src/Matrices.o" -o "src/Matrices.o" "../src/Matrices.cpp"
+'Finished building: ../src/Matrices.cpp'
+' '
+'Building file: ../src/Sobel.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Sobel.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Sobel.d" -MT"src/Sobel.o" -o "src/Sobel.o" "../src/Sobel.cpp"
+'Finished building: ../src/Sobel.cpp'
+' '
+'Building file: ../src/main.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdTest01_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: HarrisProject.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdTest01_bsp/ps7_cortexa9_0/lib -o "HarrisProject.elf"  ./src/FileSDCard.o ./src/Matrices.o ./src/Sobel.o ./src/TestReadImg.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: HarrisProject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size HarrisProject.elf  |tee "HarrisProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 848523	   2880	4111808	4963211	 4bbb8b	HarrisProject.elf
+'Finished building: HarrisProject.elf.size'
+' '

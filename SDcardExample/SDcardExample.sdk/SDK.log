@@ -33047,3 +33047,10 @@ con
 
 02:44:54 INFO  : Launch script is exported to file 'C:\master\EmbeddedPRJ\SDcardExample\SDcardExample.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_harrisproject.elf_on_local.tcl'
 02:46:46 INFO  : Disconnected from the channel tcfchan#8.
+08:45:08 INFO  : Registering command handlers for SDK TCF services
+08:45:09 INFO  : Launching XSCT server: xsct.bat -interactive C:\master\EmbeddedPRJ\SDcardExample\SDcardExample.sdk\temp_xsdb_launch_script.tcl
+08:45:14 INFO  : XSCT server has started successfully.
+08:45:25 INFO  : Successfully done setting XSCT server connection channel  
+08:45:25 INFO  : Processing command line option -hwspec C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk/system_wrapper.hdf.
+08:45:25 INFO  : Successfully done setting SDK workspace  
+08:45:25 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_1.

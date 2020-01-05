@@ -71,12 +71,6 @@ typedef union{
 
 typedef vectorSigType100 VectorSigArray100[MSIZE100];
 
-//typedef {
-//	int xLoc;
-//	int yLoc;
-//	double value;
-//} corners;
-
 void displayMatrix3(VectorArray3 input, int matrixSize);
 void displayMatrix3(VectorFloatArray3 input, int matrixSize);
 void displayMatrix100(VectorArray100 input, int matrixSize);

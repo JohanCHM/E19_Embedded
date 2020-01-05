@@ -3945,3 +3945,49 @@ Each I/O pin of the AXI GPIO is individually programmable as an input or output 
 
 !ENTRY com.xilinx.sdk.utils 0 0 2020-01-05 02:46:46.953
 !MESSAGE XSCT command with result: [disconnect tcfchan#8], Result: [null, ]. Thread: Thread-945
+!SESSION 2020-01-05 08:44:50.875 -----------------------------------------------
+eclipse.buildId=2017.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk
+
+!ENTRY org.eclipse.ui 2 0 2020-01-05 08:44:56.020
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-01-05 08:44:56.020
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2020-01-05 08:44:57.567
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-01-05 08:44:57.568
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-01-05 08:45:14.285
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-01-05 08:45:14.287
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-01-05 08:45:25.013
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-01-05 08:45:25.019
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-01-05 08:45:25.026
+!MESSAGE XSCT Command: [setws C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-01-05 08:45:25.031
+!MESSAGE XSCT command with result: [setws C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-01-05 08:45:25.049
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-01-05 08:45:27.412
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-01-05 08:45:27.418
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk/system_wrapper_hw_platform_1/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-01-05 08:45:30.428
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/master/EmbeddedPRJ/SDcardExample/SDcardExample.sdk/system_wrapper_hw_platform_1/system.hdf], Result: [null, ]. Thread: main
