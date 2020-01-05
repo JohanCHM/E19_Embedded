@@ -5786,3 +5786,41 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: No se hace nada para `main-build'.
+12:42:56 **** Auto Build of configuration Debug for project harrisProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/convolution.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/convolution.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../harrisProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/convolution.d" -MT"src/convolution.o" -o "src/convolution.o" "../src/convolution.cpp"
+../src/convolution.cpp: In function 'void convolution(k_t (*)[3], wdw_t (*)[3], result_t&)':
+../src/convolution.cpp:10:5: warning: label 'Row' defined but not used [-Wunused-label]
+     Row: for (int i = 0; i < M_ROWS; i++)
+     ^~~
+../src/convolution.cpp:12:9: warning: label 'Col' defined but not used [-Wunused-label]
+         Col: for (int j = 0; j < M_COLS; j++)
+         ^~~
+'Finished building: ../src/convolution.cpp'
+' '
+'Building file: ../src/convolution_test.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/convolution_test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../harrisProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/convolution_test.d" -MT"src/convolution_test.o" -o "src/convolution_test.o" "../src/convolution_test.cpp"
+../src/convolution_test.cpp: In function 'int main(int, char**)':
+../src/convolution_test.cpp:16:13: warning: unused variable 'hw_result' [-Wunused-variable]
+    result_t hw_result, sw_result;
+             ^~~~~~~~~
+'Finished building: ../src/convolution_test.cpp'
+' '
+'Building file: ../src/main.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../harrisProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: harrisProject.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../harrisProject_bsp/ps7_cortexa9_0/lib -o "harrisProject.elf"  ./src/FileSDCard.o ./src/Matrices.o ./src/Sobel.o ./src/TestReadImg.o ./src/convolution.o ./src/convolution_test.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\master\EmbeddedPRJ2\E19_Embedded\MiniProjectCPP\MiniProjectCPP.sdk\harrisProject\Debug/../src/main.cpp:15: multiple definition of `main'
+./src/convolution_test.o:C:\master\EmbeddedPRJ2\E19_Embedded\MiniProjectCPP\MiniProjectCPP.sdk\harrisProject\Debug/../src/convolution_test.cpp:7: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [harrisProject.elf] Error 1

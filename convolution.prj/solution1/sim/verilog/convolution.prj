@@ -1,0 +1,6 @@
+sv xil_defaultlib "AESL_automem_k.v"
+sv xil_defaultlib "AESL_automem_wdw.v"
+sv xil_defaultlib "convolution.autotb.v"
+sv xil_defaultlib "convolution.v"
+sv xil_defaultlib "convolution_mul_3bkb.v"
+

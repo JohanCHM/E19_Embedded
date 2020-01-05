@@ -28,3 +28,22 @@ launch_sdk -workspace C:/master/EmbeddedPRJ2/E19_Embedded/MiniProjectCPP/MiniPro
 INFO: [Vivado 12-393] Launching SDK...
 INFO: [Vivado 12-417] Running xsdk -workspace C:/master/EmbeddedPRJ2/E19_Embedded/MiniProjectCPP/MiniProjectCPP.sdk -hwspec C:/master/EmbeddedPRJ2/E19_Embedded/MiniProjectCPP/MiniProjectCPP.sdk/solution_wrapper.hdf
 INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+cd C:\master\EmbeddedPRJ2\E19_Embedded\convolution.prj\solution1\sim\verilog
+couldn't change working directory to "C:masterEmbeddedPRJ2E19_Embeddedconvolution.prjsolution1simerilog": no such file or directory
+cd C:\master\EmbeddedPRJ2\E19_Embedded\convolution.prj\solution1
+couldn't change working directory to "C:masterEmbeddedPRJ2E19_Embeddedconvolution.prjsolution1": no such file or directory
+cd C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/
+pwd
+C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1
+cd sim
+pwd
+C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/sim
+cd verilog
+pwd
+C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/sim/verilog
+current_fileset
+sources_1
+open_wave_database convolution.wdb
+ERROR: [Simtcl 6-118] Unable to locate wdb file 'convolution.wdb'
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan  5 13:22:46 2020...

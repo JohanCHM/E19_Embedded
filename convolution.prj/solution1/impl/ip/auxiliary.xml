@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="convolution" xd:componentRef="convolution" xd:initiationInterval="53" xd:clockPeriod="8.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="res" xd:originalName="res" xd:direction="out" xd:interfaceRef="res" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="32" xd:firstOut="0"/>
+  <xd:arg xd:name="k_q0" xd:originalName="k_q0" xd:direction="in" xd:interfaceRef="k_q0" xd:busTypeRef="ap_memory" xd:arraySize="9" xd:dataWidth="32"/>
+  <xd:arg xd:name="wdw_q0" xd:originalName="wdw_q0" xd:direction="in" xd:interfaceRef="wdw_q0" xd:busTypeRef="ap_memory" xd:arraySize="9" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="52" xd:worst-case="52" xd:average-case="52"/>
+  <xd:resourceEstimates xd:LUT="250" xd:FF="549" xd:BRAM="0" xd:DSP="4"/>
+</xd:acceleratorMap>

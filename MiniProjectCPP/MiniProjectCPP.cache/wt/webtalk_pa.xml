@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Dec 31 00:08:23 2019">
+<application name="pa" timeStamp="Sun Jan  5 13:22:43 2020">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="f77796b6bee842b6931936b41bb6bb7b" type="ProjectID"/>
 <property name="ProjectIteration" value="2" type="ProjectIteration"/>
@@ -21,7 +21,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CreateTopHDL" value="1" type="JavaHandler"/>
 <property name="CustomizeRSBBlock" value="4" type="JavaHandler"/>
 <property name="NewExportHardware" value="2" type="JavaHandler"/>
-<property name="NewLaunchHardware" value="6" type="JavaHandler"/>
+<property name="NewLaunchHardware" value="8" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
 <property name="OpenBlockDesign" value="2" type="JavaHandler"/>
 <property name="RegenerateRSBLayout" value="2" type="JavaHandler"/>
@@ -31,24 +31,25 @@ This means code written to parse this file will need to be revisited each subseq
 <item name="Gui Resources Info">
 <property name="ApplyRSBMultiAutomationDialog_CHECKBOX_TREE" value="2" type="GuiResourceData"/>
 <property name="BaseDialog_CANCEL" value="3" type="GuiResourceData"/>
-<property name="BaseDialog_OK" value="17" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="19" type="GuiResourceData"/>
 <property name="BaseDialog_YES" value="1" type="GuiResourceData"/>
+<property name="CommandsInput_TYPE_TCL_COMMAND_HERE" value="38" type="GuiResourceData"/>
 <property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="9" type="GuiResourceData"/>
 <property name="CreateNewDiagramDialog_DESIGN_NAME" value="1" type="GuiResourceData"/>
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="1" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="4" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="5" type="GuiResourceData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiResourceData"/>
 <property name="MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE" value="10" type="GuiResourceData"/>
-<property name="MainMenuMgr_EXPORT" value="8" type="GuiResourceData"/>
-<property name="MainMenuMgr_FILE" value="16" type="GuiResourceData"/>
-<property name="MainMenuMgr_OPEN_RECENT_FILE" value="7" type="GuiResourceData"/>
-<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="5" type="GuiResourceData"/>
+<property name="MainMenuMgr_EXPORT" value="10" type="GuiResourceData"/>
+<property name="MainMenuMgr_FILE" value="20" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_FILE" value="9" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="6" type="GuiResourceData"/>
 <property name="MainMenuMgr_TOOLS" value="4" type="GuiResourceData"/>
 <property name="MainMenuMgr_WINDOW" value="2" type="GuiResourceData"/>
 <property name="NewExportHardwareDialog_INCLUDE_BITSTREAM" value="2" type="GuiResourceData"/>
 <property name="PACommandNames_CREATE_TOP_HDL" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_EXPORT_HARDWARE" value="2" type="GuiResourceData"/>
-<property name="PACommandNames_LAUNCH_HARDWARE" value="6" type="GuiResourceData"/>
+<property name="PACommandNames_LAUNCH_HARDWARE" value="8" type="GuiResourceData"/>
 <property name="PACommandNames_REGENERATE_LAYOUT" value="3" type="GuiResourceData"/>
 <property name="PACommandNames_VALIDATE_RSB_DESIGN" value="1" type="GuiResourceData"/>
 <property name="PartChooser_BOARDS" value="2" type="GuiResourceData"/>
@@ -64,9 +65,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SystemBuilderView_ORIENTATION" value="2" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="43" type="GuiMode"/>
+<property name="GuiMode" value="45" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="35" type="TclMode"/>
+<property name="TclMode" value="37" type="TclMode"/>
 </item>
 </section>
 </application>

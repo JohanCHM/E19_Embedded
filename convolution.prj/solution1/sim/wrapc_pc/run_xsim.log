@@ -1,0 +1,114 @@
+Result: -762
+Test passed.
+
+C:\master\EmbeddedPRJ2\E19_Embedded\convolution.prj\solution1\sim\verilog>call C:/Xilinx/Vivado/2017.2/bin/xelab xil_defaultlib.apatb_convolution_top -prj convolution.prj -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 --initfile "C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s convolution -debug wave 
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_convolution_top -prj convolution.prj -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 --initfile C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s convolution -debug wave 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/sim/verilog/AESL_automem_k.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_k
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/sim/verilog/AESL_automem_wdw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_wdw
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/sim/verilog/convolution.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_convolution_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/sim/verilog/convolution.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module convolution
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/sim/verilog/convolution_mul_3bkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module convolution_mul_3bkb_MulnS_0
+INFO: [VRFC 10-311] analyzing module convolution_mul_3bkb
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.convolution_mul_3bkb_MulnS_0
+Compiling module xil_defaultlib.convolution_mul_3bkb(ID=1,NUM_ST...
+Compiling module xil_defaultlib.convolution
+Compiling module xil_defaultlib.AESL_automem_k
+Compiling module xil_defaultlib.AESL_automem_wdw
+Compiling module xil_defaultlib.apatb_convolution_top
+Built simulation snapshot convolution
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/sim/verilog/xsim.dir/convolution/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jan  5 13:24:36 2020...
+
+****** xsim v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/convolution/xsim_script.tcl
+# xsim {convolution} -autoloadwcfg -tclbatch {convolution.tcl}
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source convolution.tcl
+## log_wave -r /
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set res_group [add_wave_group res(wire) -into $coutputgroup]
+## add_wave /apatb_convolution_top/AESL_inst_convolution/res_ap_vld -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_convolution_top/AESL_inst_convolution/res -into $res_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set wdw_group [add_wave_group wdw(memory) -into $cinputgroup]
+## add_wave /apatb_convolution_top/AESL_inst_convolution/wdw_q0 -into $wdw_group -radix hex
+## add_wave /apatb_convolution_top/AESL_inst_convolution/wdw_ce0 -into $wdw_group -color #ffff00 -radix hex
+## add_wave /apatb_convolution_top/AESL_inst_convolution/wdw_address0 -into $wdw_group -radix hex
+## set k_group [add_wave_group k(memory) -into $cinputgroup]
+## add_wave /apatb_convolution_top/AESL_inst_convolution/k_q0 -into $k_group -radix hex
+## add_wave /apatb_convolution_top/AESL_inst_convolution/k_ce0 -into $k_group -color #ffff00 -radix hex
+## add_wave /apatb_convolution_top/AESL_inst_convolution/k_address0 -into $k_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_convolution_top/AESL_inst_convolution/ap_start -into $blocksiggroup
+## add_wave /apatb_convolution_top/AESL_inst_convolution/ap_done -into $blocksiggroup
+## add_wave /apatb_convolution_top/AESL_inst_convolution/ap_idle -into $blocksiggroup
+## add_wave /apatb_convolution_top/AESL_inst_convolution/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_convolution_top/AESL_inst_convolution/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_convolution_top/AESL_inst_convolution/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_convolution_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_convolution_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_convolution_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_convolution_top/LENGTH_k -into $tb_portdepth_group -radix hex
+## add_wave /apatb_convolution_top/LENGTH_wdw -into $tb_portdepth_group -radix hex
+## add_wave /apatb_convolution_top/LENGTH_res -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_res_group [add_wave_group res(wire) -into $tbcoutputgroup]
+## add_wave /apatb_convolution_top/res_ap_vld -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_convolution_top/res -into $tb_res_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_wdw_group [add_wave_group wdw(memory) -into $tbcinputgroup]
+## add_wave /apatb_convolution_top/wdw_q0 -into $tb_wdw_group -radix hex
+## add_wave /apatb_convolution_top/wdw_ce0 -into $tb_wdw_group -color #ffff00 -radix hex
+## add_wave /apatb_convolution_top/wdw_address0 -into $tb_wdw_group -radix hex
+## set tb_k_group [add_wave_group k(memory) -into $tbcinputgroup]
+## add_wave /apatb_convolution_top/k_q0 -into $tb_k_group -radix hex
+## add_wave /apatb_convolution_top/k_ce0 -into $tb_k_group -color #ffff00 -radix hex
+## add_wave /apatb_convolution_top/k_address0 -into $tb_k_group -radix hex
+## save_wave_config convolution.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "116000"
+// RTL Simulation : 1 / 1 [0.00%] @ "548000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 580 ns : File "C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/sim/verilog/convolution.autotb.v" Line 326
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Jan  5 13:24:41 2020...
+Result: -762
+Test passed.

@@ -1,0 +1,151 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'convolution'" level="0">
+<item name = "Date">Sun Jan  5 12:28:17 2020
+</item>
+<item name = "Version">2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)</item>
+<item name = "Project">convolution.prj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z010clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">8.00</item>
+<item name = "Clock uncertainty (ns)">1.00</item>
+<item name = "Estimated clock period (ns)">6.91</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">52, 52, 53, 53, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Row">51, 51, 17, -, -, 3, no</column>
+<column name=" + Col">15, 15, 5, -, -, 3, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 231, 113</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, 4, 165, 50</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 87</column>
+<column name="Register">-, -, 153, -</column>
+<specialColumn name="Available">120, 80, 35200, 17600</specialColumn>
+<specialColumn name="Utilization (%)">0, 5, 1, 1</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="convolution_mul_3bkb_U0">convolution_mul_3bkb, 0, 4, 165, 50</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_1_fu_133_p2">+, 0, 11, 8, 2, 1</column>
+<column name="j_1_fu_187_p2">+, 0, 11, 8, 2, 1</column>
+<column name="tmp_10_fu_203_p2">+, 0, 20, 10, 5, 5</column>
+<column name="tmp_2_fu_171_p2">+, 0, 20, 10, 5, 5</column>
+<column name="tmp_6_fu_220_p2">+, 0, 101, 37, 32, 32</column>
+<column name="tmp_1_fu_139_p2">-, 0, 14, 9, 3, 2</column>
+<column name="tmp_4_fu_193_p2">-, 0, 14, 9, 3, 2</column>
+<column name="tmp_8_fu_121_p2">-, 0, 20, 10, 5, 5</column>
+<column name="tmp_s_fu_161_p2">-, 0, 20, 10, 5, 5</column>
+<column name="exitcond1_fu_127_p2">icmp, 0, 0, 1, 2, 2</column>
+<column name="exitcond_fu_181_p2">icmp, 0, 0, 1, 2, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">45, 8, 1, 8</column>
+<column name="i_reg_78">9, 2, 2, 4</column>
+<column name="j_reg_89">9, 2, 2, 4</column>
+<column name="res">15, 3, 32, 96</column>
+<column name="tmp_fu_42">9, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">7, 0, 7, 0</column>
+<column name="i_1_reg_246">2, 0, 2, 0</column>
+<column name="i_reg_78">2, 0, 2, 0</column>
+<column name="j_1_reg_264">2, 0, 2, 0</column>
+<column name="j_reg_89">2, 0, 2, 0</column>
+<column name="k_load_reg_274">32, 0, 32, 0</column>
+<column name="tmp_5_reg_284">32, 0, 32, 0</column>
+<column name="tmp_8_reg_238">5, 0, 5, 0</column>
+<column name="tmp_fu_42">32, 0, 32, 0</column>
+<column name="tmp_s_reg_251">5, 0, 5, 0</column>
+<column name="wdw_load_reg_279">32, 0, 32, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, convolution, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, convolution, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, convolution, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, convolution, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, convolution, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, convolution, return value</column>
+<column name="k_address0">out, 4, ap_memory, k, array</column>
+<column name="k_ce0">out, 1, ap_memory, k, array</column>
+<column name="k_q0">in, 32, ap_memory, k, array</column>
+<column name="wdw_address0">out, 4, ap_memory, wdw, array</column>
+<column name="wdw_ce0">out, 1, ap_memory, wdw, array</column>
+<column name="wdw_q0">in, 32, ap_memory, wdw, array</column>
+<column name="res">out, 32, ap_vld, res, pointer</column>
+<column name="res_ap_vld">out, 1, ap_vld, res, pointer</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">6.91</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'tmp_5', MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14">mul, 6.91, 6.91, -, -, -, -, -, -, -, -, -, -, -</column>
+</table>
+</item>
+</section>
+</profile>

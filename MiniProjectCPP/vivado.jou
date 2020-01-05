@@ -14,3 +14,13 @@ open_project C:/master/EmbeddedPRJ2/E19_Embedded/MiniProjectCPP/MiniProjectCPP.x
 update_compile_order -fileset sources_1
 launch_sdk -workspace C:/master/EmbeddedPRJ2/E19_Embedded/MiniProjectCPP/MiniProjectCPP.sdk -hwspec C:/master/EmbeddedPRJ2/E19_Embedded/MiniProjectCPP/MiniProjectCPP.sdk/solution_wrapper.hdf
 launch_sdk -workspace C:/master/EmbeddedPRJ2/E19_Embedded/MiniProjectCPP/MiniProjectCPP.sdk -hwspec C:/master/EmbeddedPRJ2/E19_Embedded/MiniProjectCPP/MiniProjectCPP.sdk/solution_wrapper.hdf
+cd C:\master\EmbeddedPRJ2\E19_Embedded\convolution.prj\solution1\sim\verilog
+cd C:\master\EmbeddedPRJ2\E19_Embedded\convolution.prj\solution1
+cd C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/
+pwd
+cd sim
+pwd
+cd verilog
+pwd
+current_fileset
+open_wave_database convolution.wdb

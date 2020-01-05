@@ -1,0 +1,336 @@
+
+
+================================================================
+== Vivado HLS Report for 'convolution'
+================================================================
+* Date:           Sun Jan  5 12:28:17 2020
+
+* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Project:        convolution.prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   8.00|      6.91|        1.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   52|   52|   53|   53|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Row     |   51|   51|        17|          -|          -|     3|    no    |
+        | + Col    |   15|   15|         5|          -|          -|     3|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 7
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond1)
+3 --> 
+	4  / (!exitcond)
+	2  / (exitcond)
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	3  / true
+* FSM state operations: 
+
+ <State 1>: 1.59ns
+ST_1: tmp (4)  [1/1] 0.00ns
+:0  %tmp = alloca i32
+
+ST_1: StgValue_9 (5)  [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap([9 x i32]* %k) nounwind, !map !14
+
+ST_1: StgValue_10 (6)  [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap([9 x i32]* %wdw) nounwind, !map !20
+
+ST_1: StgValue_11 (7)  [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i32* %res) nounwind, !map !24
+
+ST_1: StgValue_12 (8)  [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecTopModule([12 x i8]* @convolution_str) nounwind
+
+ST_1: StgValue_13 (9)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:9
+:5  call void @_ssdm_op_Write.ap_auto.i32P(i32* %res, i32 0) nounwind
+
+ST_1: StgValue_14 (10)  [1/1] 1.59ns
+:6  store i32 0, i32* %tmp
+
+ST_1: StgValue_15 (11)  [1/1] 1.59ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:10
+:7  br label %1
+
+
+ <State 2>: 4.52ns
+ST_2: i (13)  [1/1] 0.00ns
+:0  %i = phi i2 [ 0, %0 ], [ %i_1, %5 ]
+
+ST_2: i_cast2_cast (14)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:10
+:1  %i_cast2_cast = zext i2 %i to i5
+
+ST_2: tmp_7 (15)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:10
+:2  %tmp_7 = call i4 @_ssdm_op_BitConcatenate.i4.i2.i2(i2 %i, i2 0)
+
+ST_2: p_shl_cast (16)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:3  %p_shl_cast = zext i4 %tmp_7 to i5
+
+ST_2: tmp_8 (17)  [1/1] 2.35ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:4  %tmp_8 = sub i5 %p_shl_cast, %i_cast2_cast
+
+ST_2: exitcond1 (18)  [1/1] 2.07ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:10
+:5  %exitcond1 = icmp eq i2 %i, -1
+
+ST_2: empty (19)  [1/1] 0.00ns
+:6  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3) nounwind
+
+ST_2: i_1 (20)  [1/1] 2.17ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:10
+:7  %i_1 = add i2 %i, 1
+
+ST_2: StgValue_24 (21)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:10
+:8  br i1 %exitcond1, label %6, label %2
+
+ST_2: StgValue_25 (23)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:11
+:0  call void (...)* @_ssdm_op_SpecLoopName([4 x i8]* @p_str) nounwind
+
+ST_2: tmp_3 (24)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:11
+:1  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([4 x i8]* @p_str) nounwind
+
+ST_2: tmp_1 (25)  [1/1] 2.17ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:2  %tmp_1 = sub i2 -2, %i
+
+ST_2: tmp_1_cast_cast (26)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:3  %tmp_1_cast_cast = zext i2 %tmp_1 to i5
+
+ST_2: tmp_9 (27)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:4  %tmp_9 = call i4 @_ssdm_op_BitConcatenate.i4.i2.i2(i2 %tmp_1, i2 0)
+
+ST_2: p_shl1_cast (28)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:5  %p_shl1_cast = zext i4 %tmp_9 to i5
+
+ST_2: tmp_s (29)  [1/1] 2.35ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:6  %tmp_s = sub i5 %p_shl1_cast, %tmp_1_cast_cast
+
+ST_2: StgValue_32 (30)  [1/1] 1.59ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:12
+:7  br label %3
+
+ST_2: StgValue_33 (60)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:19
+:0  ret void
+
+
+ <State 3>: 6.83ns
+ST_3: j (32)  [1/1] 0.00ns
+:0  %j = phi i2 [ 0, %2 ], [ %j_1, %4 ]
+
+ST_3: j_cast1_cast (33)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:1  %j_cast1_cast = zext i2 %j to i5
+
+ST_3: tmp_2 (34)  [1/1] 2.33ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:2  %tmp_2 = add i5 %tmp_8, %j_cast1_cast
+
+ST_3: tmp_11_cast (35)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:3  %tmp_11_cast = sext i5 %tmp_2 to i32
+
+ST_3: wdw_addr (36)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:4  %wdw_addr = getelementptr [9 x i32]* %wdw, i32 0, i32 %tmp_11_cast
+
+ST_3: exitcond (37)  [1/1] 2.07ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:12
+:5  %exitcond = icmp eq i2 %j, -1
+
+ST_3: empty_2 (38)  [1/1] 0.00ns
+:6  %empty_2 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3) nounwind
+
+ST_3: j_1 (39)  [1/1] 2.17ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:12
+:7  %j_1 = add i2 %j, 1
+
+ST_3: StgValue_42 (40)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:12
+:8  br i1 %exitcond, label %5, label %4
+
+ST_3: tmp_4 (44)  [1/1] 2.17ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:2  %tmp_4 = sub i2 -2, %j
+
+ST_3: tmp_4_cast_cast (45)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:3  %tmp_4_cast_cast = zext i2 %tmp_4 to i5
+
+ST_3: tmp_10 (46)  [1/1] 2.33ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:4  %tmp_10 = add i5 %tmp_s, %tmp_4_cast_cast
+
+ST_3: tmp_12_cast (47)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:5  %tmp_12_cast = sext i5 %tmp_10 to i32
+
+ST_3: k_addr (48)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:6  %k_addr = getelementptr [9 x i32]* %k, i32 0, i32 %tmp_12_cast
+
+ST_3: k_load (49)  [2/2] 2.32ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:7  %k_load = load i32* %k_addr, align 4
+
+ST_3: wdw_load (50)  [2/2] 2.32ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:8  %wdw_load = load i32* %wdw_addr, align 4
+
+ST_3: empty_3 (57)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:17
+:0  %empty_3 = call i32 (...)* @_ssdm_op_SpecRegionEnd([4 x i8]* @p_str, i32 %tmp_3) nounwind
+
+ST_3: StgValue_51 (58)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:10
+:1  br label %1
+
+
+ <State 4>: 2.32ns
+ST_4: k_load (49)  [1/2] 2.32ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:7  %k_load = load i32* %k_addr, align 4
+
+ST_4: wdw_load (50)  [1/2] 2.32ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:8  %wdw_load = load i32* %wdw_addr, align 4
+
+
+ <State 5>: 6.91ns
+ST_5: tmp_5 (51)  [2/2] 6.91ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:9  %tmp_5 = mul nsw i32 %k_load, %wdw_load
+
+
+ <State 6>: 6.91ns
+ST_6: tmp_5 (51)  [1/2] 6.91ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:9  %tmp_5 = mul nsw i32 %k_load, %wdw_load
+
+
+ <State 7>: 4.49ns
+ST_7: tmp_load (42)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:0  %tmp_load = load i32* %tmp
+
+ST_7: StgValue_57 (43)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:13
+:1  call void (...)* @_ssdm_op_SpecLoopName([4 x i8]* @p_str1) nounwind
+
+ST_7: tmp_6 (52)  [1/1] 2.90ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:10  %tmp_6 = add nsw i32 %tmp_load, %tmp_5
+
+ST_7: StgValue_59 (53)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:11  call void @_ssdm_op_Write.ap_auto.i32P(i32* %res, i32 %tmp_6) nounwind
+
+ST_7: StgValue_60 (54)  [1/1] 1.59ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14
+:12  store i32 %tmp_6, i32* %tmp
+
+ST_7: StgValue_61 (55)  [1/1] 0.00ns  loc: MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:12
+:13  br label %3
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 8ns, clock uncertainty: 1ns.
+
+ <State 1>: 1.59ns
+The critical path consists of the following:
+	'alloca' operation ('tmp') [4]  (0 ns)
+	'store' operation of constant 0 on local variable 'tmp' [10]  (1.59 ns)
+
+ <State 2>: 4.52ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:10) [13]  (0 ns)
+	'sub' operation ('tmp_1', MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14) [25]  (2.17 ns)
+	'sub' operation ('tmp_s', MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14) [29]  (2.35 ns)
+
+ <State 3>: 6.83ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:12) [32]  (0 ns)
+	'sub' operation ('tmp_4', MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14) [44]  (2.17 ns)
+	'add' operation ('tmp_10', MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14) [46]  (2.33 ns)
+	'getelementptr' operation ('k_addr', MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14) [48]  (0 ns)
+	'load' operation ('k_load', MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14) on array 'k' [49]  (2.32 ns)
+
+ <State 4>: 2.32ns
+The critical path consists of the following:
+	'load' operation ('k_load', MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14) on array 'k' [49]  (2.32 ns)
+
+ <State 5>: 6.91ns
+The critical path consists of the following:
+	'mul' operation ('tmp_5', MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14) [51]  (6.91 ns)
+
+ <State 6>: 6.91ns
+The critical path consists of the following:
+	'mul' operation ('tmp_5', MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14) [51]  (6.91 ns)
+
+ <State 7>: 4.49ns
+The critical path consists of the following:
+	'load' operation ('tmp_load', MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14) on local variable 'tmp' [42]  (0 ns)
+	'add' operation ('tmp_6', MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14) [52]  (2.9 ns)
+	'store' operation (MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14) of variable 'tmp_6', MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp:14 on local variable 'tmp' [54]  (1.59 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

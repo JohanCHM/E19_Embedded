@@ -1,0 +1,10 @@
+0.6
+2017.2
+Jun 15 2017
+18:52:51
+C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/sim/vhdl/AESL_automem_k.vhd,1578226813,vhdl,,,,aesl_automem_k,C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed,,,,,,
+C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/sim/vhdl/AESL_automem_wdw.vhd,1578226813,vhdl,,,,aesl_automem_wdw,C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed,,,,,,
+C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/sim/vhdl/AESL_sim_pkg.vhd,1578226813,vhdl,,,,aesl_sim_components,C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed,,,,,,
+C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/sim/vhdl/convolution.autotb.vhd,1578226813,vhdl,,,,apatb_convolution_top,C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed,,,,,,
+C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/sim/vhdl/convolution.vhd,1578223697,vhdl,,,,convolution,C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed,,,,,,
+C:/master/EmbeddedPRJ2/E19_Embedded/convolution.prj/solution1/sim/vhdl/convolution_mul_3bkb.vhd,1578223698,vhdl,,,,convolution_mul_3bkb;convolution_mul_3bkb_mulns_0,C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed,,,,,,

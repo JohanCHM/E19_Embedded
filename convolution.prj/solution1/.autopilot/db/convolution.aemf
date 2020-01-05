@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1578223697965">
+  <ports id="1" name="k" type="PortType" originalName="k" coreName="RAM" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
+    <dataOutputObjs>load</dataOutputObjs>
+  </ports>
+  <ports id="2" name="wdw" type="PortType" originalName="wdw" coreName="RAM" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
+    <dataOutputObjs>load</dataOutputObjs>
+  </ports>
+  <ports id="3" name="res" type="PortType" originalName="res" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="66" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@ports.2"/>
+  <edges id="70" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="71" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="74" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="75" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="76" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="85" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="88" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="91" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="92" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="93" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="96" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="104" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="106" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="107" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="108" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="110" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="116" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="118" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="120" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="121" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="122" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="123" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="125" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="127" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="135" source_obj="//@blocks.4/@node_objs.3" sink_obj="//@blocks.4/@node_objs.5"/>
+  <edges id="136" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@blocks.4/@node_objs.5"/>
+  <edges id="137" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.6"/>
+  <edges id="138" source_obj="//@blocks.4/@node_objs.5" sink_obj="//@blocks.4/@node_objs.6"/>
+  <edges id="140" source_obj="//@blocks.4/@node_objs.7" sink_obj="//@ports.2"/>
+  <edges id="141" source_obj="//@blocks.4/@node_objs.6" sink_obj="//@blocks.4/@node_objs.7"/>
+  <edges id="142" source_obj="//@blocks.4/@node_objs.6" sink_obj="//@blocks.4/@node_objs.8"/>
+  <edges id="143" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.4/@node_objs.8"/>
+  <edges id="144" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4/@node_objs.9"/>
+  <edges id="145" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="181" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="182" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.6"/>
+  <edges id="183" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="184" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="185" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.5"/>
+  <edges id="186" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="187" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3"/>
+  <edges id="188" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.1"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.4/@node_objs.4"/>
+  <edges id="-1" source_obj="//@ports.1" sink_obj="//@blocks.4/@node_objs.4"/>
+  <edges id="-1" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.4/@node_objs.3"/>
+  <blocks id="12" name="block_12" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_22</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="tmp" bitwidth="32" opcode="alloca" m_display="0">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="node_9" lineNumber="9" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." contextFuncName="convolution" opcode="write" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="9" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataOutputObjs>res</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="node_10" opcode="store" m_display="0">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="node_11" lineNumber="10" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." contextFuncName="convolution" opcode="br" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="10" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <controlInputObjs>block_22</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp">
+      <validLinenumbers>9</validLinenumbers>
+      <validLinenumbers>10</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="22" name="block_22" type="BlockType">
+    <controlInputObjs>block_12</controlInputObjs>
+    <controlInputObjs>block_59</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_61</controlOutputObjs>
+    <controlOutputObjs>block_31</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="i" originalName="i" bitwidth="2" opcode="phi" nodeLabel="1" m_display="0">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <controlInputObjs>block_12</controlInputObjs>
+      <controlInputObjs>block_59</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="tmp_8" lineNumber="14" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." rtlName="tmp_8_fu_121_p2" contextFuncName="convolution" bitwidth="5" opcode="sub" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="14" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="exitcond1" lineNumber="10" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." rtlName="exitcond1_fu_127_p2" contextFuncName="convolution" bitwidth="1" opcode="icmp" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="10" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="i_1" lineNumber="10" originalName="i" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." rtlName="i_1_fu_133_p2" contextFuncName="convolution" bitwidth="2" opcode="add" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="10" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="node_21" lineNumber="10" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." contextFuncName="convolution" opcode="br" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="10" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_31</controlInputObjs>
+      <controlInputObjs>block_61</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp">
+      <validLinenumbers>14</validLinenumbers>
+      <validLinenumbers>10</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="31" name="block_31" type="BlockType">
+    <controlInputObjs>block_22</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_41</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="tmp_1" lineNumber="14" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." rtlName="tmp_1_fu_139_p2" contextFuncName="convolution" bitwidth="2" opcode="sub" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="14" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="tmp_s" lineNumber="14" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." rtlName="tmp_s_fu_161_p2" contextFuncName="convolution" bitwidth="5" opcode="sub" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="14" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="node_30" lineNumber="12" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." contextFuncName="convolution" opcode="br" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="12" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <controlInputObjs>block_41</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp">
+      <validLinenumbers>14</validLinenumbers>
+      <validLinenumbers>12</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="41" name="block_41" type="BlockType">
+    <controlInputObjs>block_31</controlInputObjs>
+    <controlInputObjs>block_56</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_59</controlOutputObjs>
+    <controlOutputObjs>block_56</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="j" originalName="j" bitwidth="2" opcode="phi" nodeLabel="2" m_display="0">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>block_31</controlInputObjs>
+      <controlInputObjs>block_56</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="tmp_2" lineNumber="14" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." rtlName="tmp_2_fu_171_p2" contextFuncName="convolution" bitwidth="5" opcode="add" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="14" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="exitcond" lineNumber="12" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." rtlName="exitcond_fu_181_p2" contextFuncName="convolution" bitwidth="1" opcode="icmp" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="12" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="j_1" lineNumber="12" originalName="j" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." rtlName="j_1_fu_187_p2" contextFuncName="convolution" bitwidth="2" opcode="add" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="12" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="node_40" lineNumber="12" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." contextFuncName="convolution" opcode="br" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="12" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_56</controlInputObjs>
+      <controlInputObjs>block_59</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp">
+      <validLinenumbers>14</validLinenumbers>
+      <validLinenumbers>12</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="56" name="block_56" type="BlockType">
+    <controlInputObjs>block_41</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_41</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="tmp_load" lineNumber="14" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." contextFuncName="convolution" bitwidth="32" opcode="load" nodeLabel="6" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="14" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="tmp_4" lineNumber="14" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." rtlName="tmp_4_fu_193_p2" contextFuncName="convolution" bitwidth="2" opcode="sub" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="14" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="tmp_10" lineNumber="14" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." rtlName="tmp_10_fu_203_p2" contextFuncName="convolution" bitwidth="5" opcode="add" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="14" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="k_load" lineNumber="14" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." contextFuncName="convolution" bitwidth="32" opcode="load" nodeLabel="2" nodeLatency="1" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="14" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>k</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="wdw_load" lineNumber="14" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." contextFuncName="convolution" bitwidth="32" opcode="load" nodeLabel="2" nodeLatency="1" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="14" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>wdw</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="tmp_5" lineNumber="14" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." rtlName="convolution_mul_3bkb_U0" contextFuncName="convolution" bitwidth="32" opcode="mul" nodeLabel="4" nodeLatency="1" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="14" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="tmp_6" lineNumber="14" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." rtlName="tmp_6_fu_220_p2" contextFuncName="convolution" bitwidth="32" opcode="add" nodeLabel="6" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="14" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="node_53" lineNumber="14" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." contextFuncName="convolution" opcode="write" nodeLabel="6" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="14" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>res</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="node_54" lineNumber="14" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." contextFuncName="convolution" opcode="store" nodeLabel="6" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="14" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="node_55" lineNumber="12" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." contextFuncName="convolution" opcode="br" nodeLabel="6" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="12" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <controlInputObjs>block_41</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp">
+      <validLinenumbers>14</validLinenumbers>
+      <validLinenumbers>12</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="59" name="block_59" type="BlockType">
+    <controlInputObjs>block_41</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_22</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="node_58" lineNumber="10" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." contextFuncName="convolution" opcode="br" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="10" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+      <controlInputObjs>block_22</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp">
+      <validLinenumbers>10</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="61" name="block_61" type="BlockType">
+    <controlInputObjs>block_22</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="node_60" lineNumber="19" fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" fileDirectory=".." contextFuncName="convolution" opcode="ret" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp" linenumber="19" fileDirectory="C:\master\EmbeddedPRJ2\E19_Embedded" functionName="convolution"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="MiniProjectCPP/MiniProjectCPP.sdk/harrisProject/src/convolution.cpp">
+      <validLinenumbers>19</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <regnodes realName="tmp_reg_231">
+    <nodeIds>4</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_78">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="j_1_reg_264">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_5_reg_284">
+    <nodeIds>51</nodeIds>
+  </regnodes>
+  <regnodes realName="j_reg_89">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="k_addr_reg_269">
+    <nodeIds>48</nodeIds>
+  </regnodes>
+  <regnodes realName="wdw_load_reg_279">
+    <nodeIds>50</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_s_reg_251">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="i_1_reg_246">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="k_load_reg_274">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_8_reg_238">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="wdw_addr_reg_256">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <expressionNodes realName="j_1_fu_187">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond1_fu_127">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_10_fu_203">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_139">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_42">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_171">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_fu_121">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wdw_addr_gep_fu_54">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl1_cast_fu_157">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_82">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_220">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_fu_193">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_9_fu_149">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_161">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_phi_fu_93">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_fu_109">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond_fu_181">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_cast1_cast_fu_167">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_12_cast_fu_208">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="k_addr_gep_fu_61">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl_cast_fu_117">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_11_cast_fu_176">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_cast_cast_fu_145">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_cast2_cast_fu_105">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_fu_133">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_cast_cast_fu_199">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_213">
+    <nodeIds>51</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="tmp_load_load_fu_217">
+    <nodeIds>42</nodeIds>
+  </ioNodes>
+  <ioNodes realName="StgValue_60_store_fu_226">
+    <nodeIds>54</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_46">
+    <nodeIds>9</nodeIds>
+    <nodeIds>53</nodeIds>
+  </ioNodes>
+  <ioNodes realName="StgValue_14_store_fu_100">
+    <nodeIds>10</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="k">
+    <nodeIds>49</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="wdw">
+    <nodeIds>50</nodeIds>
+  </memoryPorts>
+  <ioPorts name="k(p0)">
+    <contents name="load">
+      <nodeIds>49</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res">
+    <contents name="write">
+      <nodeIds>9</nodeIds>
+      <nodeIds>53</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="wdw(p0)">
+    <contents name="load">
+      <nodeIds>50</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="2" latency="2"/>
+      <operations id="50" stage="2" latency="2"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="49" stage="1" latency="2"/>
+      <operations id="50" stage="1" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="51" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="51" stage="1" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="16"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="18"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="19"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="21"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="22"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="23"/>
+    </transitions>
+    <transitions inState="7" outState="3">
+      <condition id="25"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="27"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="convolution" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="52" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>7</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>12</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Row" mII="-1" mDepth="-1" mMinTripCount="3" mMaxTripCount="3" mMinLatency="51" mMaxLatency="-1" mType="1">
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>22</basicBlocks>
+      <basicBlocks>31</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="Col" mII="-1" mDepth="-1" mMinTripCount="3" mMaxTripCount="3" mMinLatency="15" mMaxLatency="-1" mType="1">
+      <basicBlocks>41</basicBlocks>
+      <basicBlocks>56</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>59</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>61</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>
