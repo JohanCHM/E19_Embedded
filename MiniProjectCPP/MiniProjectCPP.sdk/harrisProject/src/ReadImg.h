@@ -160,16 +160,16 @@ void ReadImg(char *name, int imgFlSz,int hgt, int wdt, int iniByte, VectorArray1
 
 }
 
-void WriteData(double *matrix, int matSize)
+void WriteData(char *name, double *matrix, int matSize)
 {
-	printf("Writing data to a RESULTS file");
+	printf("Writing data to a %s file", name);
 
 	int result;
 	FileSDCard file((char*)"0:/");
 
 	char c[20];
 
-	result = file.open((char*)"RESULTb.csv", FA_CREATE_ALWAYS | FA_WRITE);
+	result = file.open((char*)name, FA_CREATE_ALWAYS | FA_WRITE);
 	if (result != XST_SUCCESS) printf("Failed open file for writing\r\n");
 
 	double counta =0;

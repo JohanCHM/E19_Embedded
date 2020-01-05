@@ -26,8 +26,8 @@ int main()
 
 	// Reading Images
 	printf("Reading Image \r\n");
-	p = ReadImgProperties((char *)"smiley.bmp");
-	ReadImg((char *)"smiley.bmp", p[0], p[4], p[3], p[1], imgMatrix);
+	p = ReadImgProperties((char *)"check.bmp");
+	ReadImg((char *)"check.bmp", p[0], p[4], p[3], p[1], imgMatrix);
 
 	// Sobel filtering
 	printf("Initializing filter kernels\r\n");
@@ -302,7 +302,7 @@ int main()
 		}
 	}
 
-	displayMat(r, 20, 10);
+//	displayMat(r, 20, 10);
 
 	delete det;
 	delete trace2;
@@ -342,9 +342,9 @@ int main()
 	}
 
 	printf("\n\nThresholded Harris Response: %d corners\r\n", MSIZE100 * MSIZE100 - count);
-	displayMat(r, 10, 10);
+//	displayMat(r, 10, 10);
 
-	WriteData(r, MSIZE100);
+	WriteData((char *)"RESULTC.csv", r, MSIZE100);
 	printf("\nCompleted\r\n");
 
 	return 0;

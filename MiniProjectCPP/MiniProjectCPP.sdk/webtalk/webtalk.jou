@@ -2,11 +2,11 @@
 # Webtalk v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # 
-# Start of session at: Sun Dec 29 12:02:24 2019
-# Process ID: 716
-# Current directory: C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.sdk/webtalk
+# Start of session at: Sun Jan  5 10:05:39 2020
+# Process ID: 12636
+# Current directory: C:/master/EmbeddedPRJ2/E19_Embedded/MiniProjectCPP/MiniProjectCPP.sdk/webtalk
 # Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
-# Log file: C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.sdk/webtalk/webtalk.log
-# Journal file: C:/master/EmbeddedPRJ/MiniProjectCPP/MiniProjectCPP.sdk/webtalk\webtalk.jou
+# Log file: C:/master/EmbeddedPRJ2/E19_Embedded/MiniProjectCPP/MiniProjectCPP.sdk/webtalk/webtalk.log
+# Journal file: C:/master/EmbeddedPRJ2/E19_Embedded/MiniProjectCPP/MiniProjectCPP.sdk/webtalk\webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl
